@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly WebDev Challenge - 1</title>
+    <meta name="description" content="The first task from Weekly WebDev Challenge">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--  -----  HEADER START  -----  -->
+    <header>
+        <img src="img/logo_top.png" alt="Masteralb Creative">
+    </header>
+    <!--  -----  HEADER END  -----  -->
+    <!--  -----  MAIN START  -----  -->
+    <main>
+        <article>
+            <!--  -----  Register Form START  -----  -->
+            <h2>Register Form</h2>
+            <section>
+                <form>
+                    <label for="register__username" class="element-invisible">Username</label>
+                    <input class="text" id="register__username" type="text" placeholder="Username" required >
+                    <label for="register__password" class="element-invisible">Password</label>
+                    <input class="password" id="register__password" type="password" placeholder="Password" required>
+                    <label for="register__password-confirm" class="element-invisible">Password confirm</label>
+                    <input class="password" id="register__password-confirm" type="password" placeholder="Confirm Password" required>
+                    <label for="register__email" class="element-invisible">Email</label>
+                    <input class="email" id="register__email" type="email" placeholder="Email" required>
+                    <label for="register__select" class="element-invisible">Select Country</label>
+                    <select class="select" id="register__select" type="text" placeholder="Your Location">
+                        <option class="option" value="Warsaw">Warsaw</option>
+                        <option class="option" value="London">London</option>
+                        <option class="option" value="Paris">Paris</option>
+                        <option class="option" value="Berlin">Berlin</option>
+                    </select>
+                   <input class="checkbox" id="read" type="checkbox" name="read" value="read" required/>
+                        <label for="read" class="label--checkbox"><span class="label--checkbox__span">I have read and accept the terms of use</span></label>
+                    <label for="register__submit" class="element-invisible">Submit</label>
+                    <input class="submit" id="register__submit" type="submit" value="Sign up">
+                </form>
+            </section>
+            <!--  -----  Register Form END  -----  -->
+            <!--  -----  Send Email START  -----  -->
+            <h2>Send Email</h2>
+            <section>
+                <form>
+                    <label for="send-mail__username" class="element-invisible">Username</label>
+                    <input class="text" id="send-mail__username" type="text" placeholder="Your Name" required>
+                    <label for="send-mail__email" class="element-invisible">Email</label>
+                    <input class="email" id="send-mail__email" type="email" placeholder="Your Email" required>
+                    <label for="send-mail__textarea" class="element-invisible">Message</label>
+                    <textarea class="textarea" id="send-mail__textarea" name="message" placeholder="Type your message ..."></textarea>         
+                    <input class="checkbox" id="send-copy" type="checkbox" name="send-copy" value="send-copy" required/>
+                    <label for="send-copy" class="label--checkbox">
+                    <span class="label--checkbox__span">Send a copy to my Email</span></label>
+                    <label for="send-mail__submit" class="element-invisible">Submit</label>
+                    <input class="submit" id="send-mail__submit" type="submit" value="Send Email">
+                </form>
+            </section>
+            <!--  -----  Send Email END  -----  -->
+        </article>
+        <article>
+            <!--  -----  Sign In Form START  -----  -->
+            <h2>Sign In Form</h2>
+            <section>
+                <form>
+                    <label for="sign-in__username" class="element-invisible">Username</label>
+                    <input class="text" id="sign-in__username" type="text" placeholder="Username" required>
+                    <label for="sign-in__password" class="element-invisible">Password</label>
+                    <input class="password" id="sign-in__password" type="password" placeholder="Password" required>
+                    <input class="checkbox" id="remember" type="checkbox" name="remember" value="remember"/>
+                    <label for="remember" class="label--checkbox"><span class="label--checkbox__span">Remember me</span></label>
+                    <label for="sign-in__submit" class="element-invisible">Username</label>
+                    <input class="submit submit--small submit--right" id="sign-in__submit" type="submit" value="Sign in">
+                </form>
+            </section>
+            <!--  -----  Sign In Form END  -----  -->
+            <!--  -----  Recover Form START  -----  -->
+            <h2>Recover Form</h2>
+            <section>
+                <form>
+                    <label for="form-recover__username" class="element-invisible">Email</label>
+                    <input class="email" id="form-recover__username" type="email" placeholder="Enter Your Email" required>
+                    <label for="form-recover__telephone" class="element-invisible">Email</label>
+                    <input class="telephone" id="form-recover__telephone" type="tel" placeholder="Enter Your Phone number" required>
+                    <label for="form-recover__submit" class="element-invisible">Send</label>
+                    <input class="submit submit--small" id="form-recover__send" type="submit" value="Send"> 
+                    <label for="form-recover__done" class="element-invisible">Done</label>
+                    <input class="submit  submit--small submit--inactive submit--right" id="form-recover__done" type="submit" value="Done" disabled>
+                </form>
+            </section>
+            <!--  -----  Recover Form END  -----  -->
+            <!--  -----  Subscribe Form START  -----  -->
+            <h2>Subscribe Form</h2>
+            <section>
+                <form>
+                    <label for="subscribe__username" class="element-invisible">Email</label>
+                    <input class="email" id="subscribe__email" type="email" placeholder="Enter Your Email" required>
+                    <label for="subscribe__subscribe" class="element-invisible">Subscribe</label>
+                    <input class="submit submit--small" id="subscribe__subscribe" type="submit" value="Subscribe"> 
+                    <label for="subscribe__no" class="element-invisible">No, thanks</label>
+                    <input class="submit submit--small submit--right submit--discard" id="subscribe__no" type="submit" value="No, Thanks">
+                </form>
+            </section>
+            <!--  -----  Subscribe Form END  -----  -->
+            <!--  -----  Logo Bottom START  -----  -->
+            <div class="logo__bottom">
+                <img src="img/logo_bottom.png" alt="Masteralb Creative">
+            </div>
+            <!--  -----  Logo Bottom END  -----  -->
+            
+        </article>
+    </main>
+    <!--  -----  MAIN START  -----  -->
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
