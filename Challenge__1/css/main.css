@@ -1,6 +1,5 @@
 @import "reset.css";
 
-
 /*  -----  LAYOUT START  -----  */
 
 body {
@@ -43,6 +42,7 @@ h2 {
     top: -9999px;
 }
 
+
 /*  -----  LAYOUT END  -----  */
 
 
@@ -58,7 +58,6 @@ header>img {
     display: block;
     margin: 0px auto;
     opacity: .2;
-    
 }
 
 
@@ -188,7 +187,6 @@ input:-ms-input-placeholder,
     text-shadow: 1px 1px 1px #2e6c02;
     cursor: pointer;
     background-image: linear-gradient(#addc54, #7ec31f);
-
 }
 
 .submit:hover:enabled {
@@ -304,3 +302,57 @@ input:-ms-input-placeholder,
 /*  -----  FORM END  -----  */
 
 
+/*  -----  MEDIA START  -----  */
+
+@media all and (min-width: 599px) and (max-width: 999px) {
+    main {
+        width: 500px;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 599px) {
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+    main article {
+        padding: 0px 10px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    section {
+        padding: 13px;
+    }
+    header img,
+    .logo__bottom img {
+        width: 80%;
+        height: 80%;
+    }
+    .text,
+    .password,
+    .email,
+    .telephone {
+        background: linear-gradient(#f6f6f6, #f0f0f0);
+    }
+    .select {
+        background: url("../img/arrow-icon.jpg") right top no-repeat, linear-gradient(#f6f6f6, #f0f0f0);
+    }
+    .text,
+    .password,
+    .email,
+    .telephone,
+    .select,
+    .textarea {
+        padding-left: 15px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .submit {
+        font-size: 17px;
+    }
+}
+
+
+/*  -----  MEDIA END  -----  */
