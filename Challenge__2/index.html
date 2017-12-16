@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Weekly WebDev Challenge - 2</title>
     <meta name="description" content="The second task from Weekly WebDev Challenge">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -36,10 +37,10 @@
         <!--  ----- NAV END  -----  -->
         <div class="container">
             <div class="row">
-                <div class="col-12  col-md-6 col-lg-5 text-center text-sm-left justify-content-center">
+                <div class="col-12  col-md-6 col-lg-5 text-center text-md-left justify-content-center">
                     <h1 class="col-12 heading header__heading">Fresh Life</h1>
                     <p class="col-12 paragraph paragraph__dark">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    <a href="#" class="btn btn-danger button header__link text-uppercase">Get free now</a>
+                    <button class="btn button header__btn text-uppercase">Get free now</button>
                 </div>
             </div>
         </div>
@@ -105,7 +106,7 @@
             <div class="container">
                 <div class="row text-center align-items-center justify-content-center">
                     <div class="col-12 col-md-6 ">
-                        <h2 class="heading">Gallery</h2>
+                        <h2 class="heading gallery__heading">Gallery</h2>
                         <p class="paragraph paragraph__dark">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
@@ -123,7 +124,8 @@
                     <div class="col-12 col-md-6 bg-image"><img src="img/kaki-img.png" alt="" class="img-fluid"></div>
                 </div>
                 <div class="row align-items-center justify-content-center">
-                    <a href="#" class="btn btn-danger button header__link text-uppercase">View more</a>
+                   <button class="btn button gallery__btn text-uppercase">View more</button>
+                    
                 </div>
             </div>
         </article>
@@ -131,11 +133,26 @@
 
         <!--  ----- SUBSCRIBE START  -----  -->
         <article class="article subscribe__container" id="subscribe">
-            <form class="form-inline">
-                <label class="" for="subscribe-to-us">Subscribe to us</label>
-                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Your email address...">
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12  col-lg-6 text-center text-md-left">
+                        <h1 class="col-12 heading subscribe__heading">Subscribe To Us</h1>
+                        <p class="col-12 paragraph paragraph__dark">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+              
+                <form>
+                    <div class="form-row">
+                       <label class="invisible" for="subscribe-to-us">Subscribe to us</label>
+                        <div class="col-9 col-lg-6">
+                            <input type="email" class="form-control subscribe__input" id="inlineFormInputEmail" placeholder="Your email address...">
+                        </div>
+                        <div class="col-3 col-lg-2">
+                            <button type="submit" class=" btn button subscribe__btn text-uppercase">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </article>
         <!--  ----- SUBSCRIBE END  -----  -->
 

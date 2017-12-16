@@ -1,9 +1,15 @@
 /*  ----- START  -----  */
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 .heading {
     font-size: 54px;
+    font-weight: 800;
     color: #262626;
     padding: 0;
+    
 }
 
 .heading__light--big {
@@ -26,6 +32,17 @@
     padding-bottom: 100px;
 }
 
+.invisible {
+    position: absolute !important;
+    top: -9999px;
+}
+
+.button {
+    color: #ffffff;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
 
 /*  ----- END  -----  */
 
@@ -43,7 +60,13 @@
 }
 
 .header__heading {}
-
+.header__btn {
+    background-color: #ff6033;
+    
+}
+.header__btn:hover {
+    background-color: #fd693f;
+}
 
 /*  ----- HEADER END  -----  */
 
@@ -77,6 +100,7 @@
     /* W3C Markup */
     background-image: linear-gradient(to left, #00ADAD 0%, #00baba 50%, #00ADAD 100%);
 }
+
 
 /*  ----- ABOUT END  -----  */
 
@@ -115,17 +139,17 @@
     text-align: center;
     background-color: #ffffff;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     width: calc(100% - 100px);
 }
 
 .services__item--icon {
-   width: 100px;
+    width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid #9d9d9d; 
+    border-left: 1px solid #9d9d9d;
 }
 
 
@@ -138,21 +162,81 @@
     background-color: #ffe92f;
 }
 
+.gallery__heading {
+    font-size: 75px;
+}
+
 .gallery__container img {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
 }
 
+.gallery__btn {
+    background-color: #5585a2;
+}
+.gallery__btn:hover {
+    background-color: #6692ad;
+}
 /*  ----- GALLERY END  -----  */
 
+
 /*  ----- SUBSCRIBE START  -----  */
+
 .subscribe__container {
     background-image: url(../img/subscribe.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+.subscribe__heading {
+   font-size: 40px; 
+} 
+
+.subscribe__input {
+    border: 1px solid #262626;
+    border-radius: 0;
+    background-color: #ffffff;
+    opacity: .5;
+}
+
+.subscribe__input:focus {
+    opacity: .5;
+    border: 1px solid #262626;
+    color: #262626;
+    box-shadow: 0 0 4px #000000;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+    color: #929292;
+    opacity: 1;
+}
+
+.subscribe__input:-moz-placeholder {
+    color: #929292;
+    opacity: 1;
+}
+
+.subscribe__input::-moz-placeholder {
+    color: #929292;
+    opacity: 1;
+}
+
+.subscribe__input:-ms-input-placeholder {
+    color: #929292;
+    opacity: 1;
+}
+
+.subscribe__btn {
+    background-color: #96b92c;
+    
+}
+
+.subscribe__btn:hover {
+    background-color: #a3c53b;
+}
+
+
 /*  ----- SUBSCRIBE END  -----  */
 
 
@@ -175,12 +259,20 @@
 
 
 /*  -----------------------------  */
+
+
 /*  ----- ANIMATIONS START  -----  */
+
+
 /*  -----------------------------  */
 
 
 /*  ---------------------------  */
+
+
 /*  ----- ANIMATIONS END  -----  */
+
+
 /*  ---------------------------  */
 
 
