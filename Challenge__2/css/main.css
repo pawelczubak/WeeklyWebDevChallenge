@@ -253,8 +253,24 @@ body {
 
 
 /*  ----- FOOTER START  -----  */
+.footer__container {
+    background-color: #262626;
+    color: #ffffff;
+    font-size: 14px;
+}
 
+.footer__container .container {
+     padding: 30px 0;
+}
 
+.footer__container span {
+    color: #ff2b58;
+}
+
+.footer__logo {
+   font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
 /*  ----- FOOTER END  -----  */
 
 
