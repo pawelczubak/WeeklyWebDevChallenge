@@ -1,0 +1,195 @@
+/*  ----- START  -----  */
+
+.heading {
+    font-size: 54px;
+    color: #262626;
+    padding: 0;
+}
+
+.heading__light--big {
+    color: #ffffff;
+    font-size: 75px;
+}
+
+.paragraph {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0;
+}
+
+.paragraph__dark {
+    color: #212121;
+}
+
+.article {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/*  ----- END  -----  */
+
+
+/*  ----- HEADER START  -----  */
+
+.header__container {
+    min-height: 100vh;
+    padding-top: 200px;
+    background-image: url(../img/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header__heading {}
+
+
+/*  ----- HEADER END  -----  */
+
+
+/*  ----- NAV START  -----  */
+
+.navbar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+
+/*  ----- NAV END  -----  */
+
+
+/*  ----- ABOUT START  -----  */
+
+.about__container {
+    /* IE10+ */
+    background-image: -ms-linear-gradient(right, #00ADAD 0%, #00baba 50%, #00ADAD 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(right, #00ADAD 0%, #00baba 50%, #00ADAD 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(right, #00ADAD 0%, #00baba 50%, #00ADAD 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #00ADAD), color-stop(50, #00baba), color-stop(100, #00ADAD));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(right, #00ADAD 0%, #00baba 50%, #00ADAD 100%);
+    /* W3C Markup */
+    background-image: linear-gradient(to left, #00ADAD 0%, #00baba 50%, #00ADAD 100%);
+}
+
+/*  ----- ABOUT END  -----  */
+
+
+/*  ----- SERVICES START  -----  */
+
+.services__container {
+    background-color: #70bfff;
+}
+
+.services__heading__container {
+    position: relative;
+}
+
+.services__heading {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 40%;
+    text-align: center;
+}
+
+.services__item__container {
+    width: 100%;
+    background-color: #ffffff;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.services__item--name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    width: calc(100% - 100px);
+}
+
+.services__item--icon {
+   width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #9d9d9d; 
+}
+
+
+/*  ----- SERVICES END  -----  */
+
+
+/*  ----- GALLERY START  -----  */
+
+.gallery__container {
+    background-color: #ffe92f;
+}
+
+.gallery__container img {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+/*  ----- GALLERY END  -----  */
+
+/*  ----- SUBSCRIBE START  -----  */
+.subscribe__container {
+    background-image: url(../img/subscribe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*  ----- SUBSCRIBE END  -----  */
+
+
+/*  ----- BLOG START  -----  */
+
+
+/*  ----- BLOG END  -----  */
+
+
+/*  ----- CONTACT START  -----  */
+
+
+/*  ----- CONTACT END  -----  */
+
+
+/*  ----- FOOTER START  -----  */
+
+
+/*  ----- FOOTER END  -----  */
+
+
+/*  -----------------------------  */
+/*  ----- ANIMATIONS START  -----  */
+/*  -----------------------------  */
+
+
+/*  ---------------------------  */
+/*  ----- ANIMATIONS END  -----  */
+/*  ---------------------------  */
+
+
+/*  ----- MEDIA START  -----  */
+
+
+/*  ----- MEDIA END  -----  */
+
+.test {
+    border: 2px black solid;
+    background: red;
+}
