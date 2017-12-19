@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly WebDev Challenge - 2</title>
     <meta name="description" content="The second task from Weekly WebDev Challenge">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,700,900" rel="stylesheet">
@@ -14,18 +14,19 @@
 
 <body>
     <!--  ----- HOME START  -----  -->
-    <header class="header__container" id="home">
-        <!--  ----- NAV START  -----  -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <header>
+       <article class="header__container" id="home">
+           <!--  ----- NAV START  -----  -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
             <div class="container">
-                <a class="navbar-brand" href="">Cahee</a>
+                <a class="navbar-brand" href="#home">Cahee</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav justify-content-around nav__list text-uppercase">
-                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#about-us" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
                         <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
@@ -45,6 +46,8 @@
             </div>
         </div>
         <div class="scroll-mouse"></div>
+       </article>
+        
     </header>
     <!--  ----- HOME END  -----  -->
     <main>
@@ -144,10 +147,10 @@
                 <form>
                     <div class="form-row">
                         <label class="invisible" for="subscribe-to-us">Subscribe to us</label>
-                        <div class="col-9 col-lg-6">
+                        <div class="col-7 col-lg-6">
                             <input type="email" class="form-control subscribe__input" id="inlineFormInputEmail" placeholder="Your email address...">
                         </div>
-                        <div class="col-3 col-lg-2">
+                        <div class="col-2 col-lg-2">
                             <button type="submit" class=" btn button subscribe__btn text-uppercase">Subscribe</button>
                         </div>
                     </div>
@@ -191,6 +194,36 @@
                         <h3 class="blog__item__heading"><a href="#">Pesticides & Food: What You Need to Know</a></h3>
                         <footer class="blog__item__footer">
                             <p>By Auskteez - 6 hours ago</p>
+                        </footer>
+                    </div>
+                </div>
+                
+                 <div class=" text-left justify-content-center blog__items">
+                    <div class="blog__item__container">
+                        <div class="blog__item--date">
+                            <time datetime="2017-11-08">08 NOV</time>
+                        </div>
+                        <h3 class="blog__item__heading"><a href="#">Green Smoothies: Too Much of a Good Thing?</a></h3>
+                        <footer class="blog__item__footer">
+                            <p>By Auskteez - 7 hours ago</p>
+                        </footer>
+                    </div>
+                    <div class="blog__item__container">
+                        <div class="blog__item--date">
+                            <time datetime="2017-11-04">04 NOV</time>
+                        </div>
+                        <h3 class="blog__item__heading"><a href="#">Growing Food and a “Thirst” for Innovation</a></h3>
+                        <footer class="blog__item__footer">
+                            <p>By Auskteez - 9 hours ago</p>
+                        </footer>
+                    </div>
+                    <div class="blog__item__container">
+                        <div class="blog__item--date">
+                            <time datetime="2017-11-01">01 NOV</time>
+                        </div>
+                        <h3 class="blog__item__heading"><a href="#">Pesticides & Food: What You Need to Know</a></h3>
+                        <footer class="blog__item__footer">
+                            <p>By Auskteez - 12 hours ago</p>
                         </footer>
                     </div>
                 </div>
@@ -252,7 +285,7 @@
     <!--  ----- FOOTER START  -----  -->
     <footer class="footer__container">
         <div class="container">
-            <div class="row  justify-content-around">
+            <div class="row  align-items-center justify-content-center">
                 <div class="col-12 col-sm-4 text-center text-sm-left">© 2015 Company. All right reserved.</div>
                 <div class="col-12 col-sm-4 text-center text-sm-center footer__logo">Cahee</div>
                 <div class="col-12 col-sm-4 text-center text-sm-right">Made with <span>love</span> by Auskteez</div>
@@ -262,9 +295,12 @@
     <!--  ----- FOOTER END  -----  -->
 
     <!--  -----  JS  -----  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/main.js" type="text/javascript" ></script>
+    
 </body>
 
 </html>
