@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    /*  ----- fixed nav -----  */
     $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
             $('nav').addClass('navbar--fixed');
@@ -7,7 +8,7 @@ $(document).ready(function () {
         }
     });
 
-
+/*  ----- scroll nav -----  */
     $('nav a').click(function (event) {
         var id = $(this).attr("href");
         var offset = 0;
@@ -18,7 +19,7 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
-
+/*  ----- nav active -----  */
     var sections = $('article'),
         nav = $('nav'),
         nav_height = nav.outerHeight();
@@ -40,4 +41,13 @@ $(document).ready(function () {
         });
     });
 
+    /*  ----- view more -----  */
+    
+    $('button.viewMore').on('click', function() {
+        $(this).closest('article').find('.viewMoreDiv').removeClass('hidden').slideDown(1000);
+        $(this).addClass('hidden');
+        
+        
+    });
+    
 });

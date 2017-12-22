@@ -45,6 +45,8 @@ body {
 }
 
 
+
+
 /*  ----- END  -----  */
 
 
@@ -70,6 +72,31 @@ body {
 .header__btn:hover {
     background-color: #fd693f;
 }
+
+.scroll__mouse {
+    position: absolute;
+    left: calc(50% - 12px);
+    bottom: 69px;
+    height: 40px;
+    width: 24px;
+    border: solid 2px #2d2d2d;
+    border-radius: 12px/10px;
+    display: flex;
+}
+
+.scroll__mouse::after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 2px;
+    border: solid 1px #2d2d2d;
+    border-radius: 5px;
+    left: calc(50% - 1px);
+    top: 3px;
+    opacity: 1;
+    animation: scrollMouse 2s infinite;
+}
+
 
 
 /*  ----- HEADER END  -----  */
@@ -501,6 +528,14 @@ body {
 
 /*  ----- FOOTER END  -----  */
 
+.hidden {
+    display: none;
+   
+    
+    
+}
+
+
 
 /*  -----------------------------  */
 
@@ -510,6 +545,22 @@ body {
 
 /*  -----------------------------  */
 
+@keyframes scrollMouse {
+    0% {
+        top: 3px;
+        opacity: 1;
+    }
+    
+    50% {
+        top: 11px;
+        opacity: 1;
+    }
+    
+    100% {
+        top: 13px;
+        opacity: 0;
+    }
+}
 
 /*  ---------------------------  */
 
@@ -525,12 +576,18 @@ body {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+    
+}
 
 
 /*// Small devices (landscape phones, less than 768px)*/
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    .scroll__mouse {
+        display: none;
+    } 
+}
 
 
 /*// Medium devices (tablets, less than 992px)*/

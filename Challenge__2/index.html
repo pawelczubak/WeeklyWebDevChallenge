@@ -24,7 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav justify-content-around nav__list text-uppercase">
+                    <ul class="navbar-nav justify-content-around nav__list text-uppercase text-center">
                         <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
@@ -45,7 +45,8 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-mouse"></div>
+        <div class="scroll__mouse">
+        </div>
        </article>
         
     </header>
@@ -126,8 +127,12 @@
                     <div class="col-12 col-md-6 bg-image"><img src="img/blackberries-2-img.png" alt="" class="img-fluid"></div>
                     <div class="col-12 col-md-6 bg-image"><img src="img/kaki-img.png" alt="" class="img-fluid"></div>
                 </div>
+                <div class="hidden viewMoreDiv row">
+                    <div class="col-12 col-md-6 bg-image"><img src="img/blackberries-1-img.png" alt="" class="img-fluid"></div>
+                    <div class="col-12 col-md-6 bg-image"><img src="img/kaki-img.png" alt="" class="img-fluid"></div>
+                </div>
                 <div class="row align-items-center justify-content-center">
-                    <button class="btn button gallery__btn text-uppercase">View more</button>
+                    <button class="viewMore btn button gallery__btn text-uppercase">View more</button>
 
                 </div>
             </div>
@@ -198,8 +203,8 @@
                     </div>
                 </div>
                 
-                 <div class=" text-left justify-content-center blog__items">
-                    <div class="blog__item__container">
+                 <div class="viewMoreDiv hidden text-left justify-content-center blog__items">
+                    <div class="order-2 blog__item__container">
                         <div class="blog__item--date">
                             <time datetime="2017-11-08">08 NOV</time>
                         </div>
@@ -228,7 +233,7 @@
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center">
-                    <button class="btn button blog__btn text-uppercase">View more</button>
+                    <button class="viewMore btn button blog__btn text-uppercase">View more</button>
 
                 </div>
             </div>
