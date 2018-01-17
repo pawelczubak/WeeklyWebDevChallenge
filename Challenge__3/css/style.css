@@ -4,6 +4,27 @@ body {
   background: blue;
 }
 
+.button {
+  display: block;
+  margin: 0 auto;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 100;
+  background-color: #7cc576;
+  border: none;
+  padding: 24px 36px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  transition: color .2s, background-color .2s;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 
 /*  -----  NAVIGATION START  -----  */
 
@@ -14,7 +35,7 @@ body {
 }
 
 .nav {
-  max-width: 940px;
+  max-width: 976px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -27,11 +48,12 @@ body {
   align-items: center;
   text-decoration: none;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
+  margin-left: 18px;
 }
 
-.nav__brand--logo {
-  background-image: url(../img/nav-brand-logo.png);
+.nav__brand img {
+  padding-right: 5px;
 }
 
 .nav__toggle {
@@ -48,9 +70,7 @@ body {
   align-items: center;
 }
 
-.nav__navbar li:last-child {
-  margin-right: 0;
-}
+.nav__navbar li:last-child {}
 
 .nav__navbar a,
 .nav__navbar a:visited {
@@ -70,6 +90,81 @@ body {
 /*  -----  NAVIGATION END  -----  */
 
 
+/*  -----  HOME START  -----  */
+
+header {
+  position: relative;
+}
+
+.home__container {
+  padding: 120px 0;
+  background-image: url(../img/home-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home__container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+.home__container hgroup {
+  width: 60%;
+  margin: 0 auto;
+  color: #ffffff;
+  position: relative;
+  z-index: 100;
+}
+
+.home__heading {
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+.home__footer {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+
+/*  -----  HOME END  -----  */
+
+
+/*  -----  HOME START  -----  */
+
+
+/*  -----  HOME END  -----  */
+
+
+/*  -----  HOME START  -----  */
+
+
+/*  -----  HOME END  -----  */
+
+
+/*  -----  HOME START  -----  */
+
+
+/*  -----  HOME END  -----  */
+
+
+/*  -----  HOME START  -----  */
+
+
+/*  -----  HOME END  -----  */
+
+
 /*  ----- MEDIA START  -----  */
 
 
@@ -81,11 +176,16 @@ body {
 /*// Small devices (landscape phones, less than 768px)*/
 
 @media (max-width: 767px) {
+  /*  -----    -----  */
+  .button {
+    padding: 12px 18px;
+    border-radius: 30px;
+    
+  }
+  /*  -----  NAV  -----  */
   #nav {
-  
-  padding: 16px 0;
-  
-}
+    padding: 16px 0;
+  }
   .nav__navbar {
     display: none;
     width: 100vw;
@@ -103,7 +203,7 @@ body {
   .nav__toggle--line {
     width: 30px;
     height: 3px;
-    background-color: #000000;
+    background-color: #222222;
     display: block;
     margin: 8px auto;
     -webkit-transition: all .7s cubic-bezier(0.35, -0.62, 0.74, 1.54);
@@ -129,9 +229,18 @@ body {
     -o-transform: translateY(-13px) rotate(-45deg);
     transform: translateY(-13px) rotate(-45deg);
   }
-  
-  .nav__brand {
-    padding-left: 15px;
+  /*  -----  NAV  -----  */
+  .home__container hgroup {
+    width: 90%;
+  }
+  .home__heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .home__footer {
+    font-size: 15px;
+    padding-top: 30px;
+    padding-bottom: 45px;
   }
 }
 
