@@ -25,6 +25,19 @@ body {
   color: #000000;
 }
 
+article {
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.footer__heading {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+}
+
 
 /*  -----  NAVIGATION START  -----  */
 
@@ -92,12 +105,11 @@ body {
 
 /*  -----  HOME START  -----  */
 
-header {
+.home__container {
   position: relative;
 }
 
 .home__container {
-  padding: 120px 0;
   background-image: url(../img/home-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,20 +143,60 @@ header {
   line-height: 75px;
 }
 
-.home__footer {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 60px;
+
+/*  -----  HOME END  -----  */
+
+
+/*  -----  ABOUT START  -----  */
+
+.about__container {
+  background-color: #ffffff;
 }
 
+.about__heading {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
 
-/*  -----  HOME END  -----  */
+.about__container .footer__heading {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
 
+.sevices__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 965px;
+  margin: 0 auto;
+}
 
-/*  -----  HOME START  -----  */
+.service__box {
+ margin: 0 12.5px;
+}
 
+.service__box img {
+  display: block;
+  margin: 0 auto;
+  height: 52px;
+}
 
-/*  -----  HOME END  -----  */
+.service__heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-top: 40px;
+  padding-bottom: 19px;
+}
+
+.service__description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px; 
+  line-height: 18px;
+}
+/*  -----  ABOUT END  -----  */
 
 
 /*  -----  HOME START  -----  */
@@ -180,7 +232,6 @@ header {
   .button {
     padding: 12px 18px;
     border-radius: 30px;
-    
   }
   /*  -----  NAV  -----  */
   #nav {
@@ -241,6 +292,19 @@ header {
     font-size: 15px;
     padding-top: 30px;
     padding-bottom: 45px;
+  }
+    /*  -----  ABOUT  -----  */
+  .sevices__container {
+    flex-direction: column;
+  }
+  
+  .service__box {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  .service__box:last-child {
+    padding-bottom: 0;
   }
 }
 
