@@ -610,10 +610,21 @@ article {
 /*  -----  CONTACT END  -----  */
 
 
-/*  -----  HOME START  -----  */
+/*  -----  SPONSORS START  -----  */
 
+.sponsors__container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
 
-/*  -----  HOME END  -----  */
+.sponsors__container img {
+  margin: 20px;
+}
+
+/*  -----  SPONSORS END  -----  */
 
 
 /*  -----  HOME START  -----  */
