@@ -565,6 +565,63 @@ article {
 /*  -----  FEEDBACK END  -----  */
 
 
+/*  -----  CONTACT START  -----  */
+
+.contact__container {
+  padding-top: 66px;
+  padding-bottom: 70px;
+  background-color: #7cc576;
+}
+
+.banner__container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.banner {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+.contact__button {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #7cc576;
+  border: 3px solid #ffffff;
+  border-radius: 7px;
+  padding: 15px 38px;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+
+.contact__button:hover {
+  background-color: #ffffff;
+  color: #7cc576;
+}
+
+
+/*  -----  CONTACT END  -----  */
+
+
+/*  -----  HOME START  -----  */
+
+
+/*  -----  HOME END  -----  */
+
+
+/*  -----  HOME START  -----  */
+
+
+/*  -----  HOME END  -----  */
+
+
 /*  -----  HOME START  -----  */
 
 
@@ -760,13 +817,20 @@ article {
     font-size: 14px;
   }
   .feedback--comment {
-  position: relative;
-  padding: 10px;
-  margin: 18px 40px;
-}
+    position: relative;
+    padding: 10px;
+    margin: 18px 40px;
+  }
   .feedback--comment__container:first-child {
-  margin-bottom: 0;
-}
+    margin-bottom: 0;
+  }
+  /*  -----  CONTACT  -----  */
+  .banner {
+    font-size: 30px;
+  }
+  .contact__button {
+    font-size: 15px;
+  }
 }
 
 
@@ -800,7 +864,7 @@ article {
   /*  -----  FEEDBACK  -----  */
   .feedback--circle {
     width: 180px;
-  border-radius: 50%;
+    border-radius: 50%;
   }
   .feedback--comment header {
     font-size: 16px;
@@ -810,13 +874,13 @@ article {
     font-size: 14px;
   }
   .feedback--comment {
-  position: relative;
-  padding: 10px;
-  margin: 18px 40px;
-}
+    position: relative;
+    padding: 10px;
+    margin: 18px 40px;
+  }
   .feedback--comment__container:first-child {
-  margin-bottom: 0;
-}
+    margin-bottom: 0;
+  }
 }
 
 
