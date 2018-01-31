@@ -670,10 +670,30 @@ article {
   font-family: 'Montserrat', sans-serif;
 }
 
+.footer__latestPost--post a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__latestPost--post a:hover {
+  color: #7cc576;
+  cursor: pointer;
+}
+
 .footer__latestTweets--tweet time {
   padding-top: 12px;
   font-size: 12px;
   
+}
+
+.footer__latestTweets--tweet a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__latestTweets--tweet a:hover {
+  color: #7cc576;
+  cursor: pointer;
 }
 
 .footer__tags {
