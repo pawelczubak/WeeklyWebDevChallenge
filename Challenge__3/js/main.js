@@ -2,8 +2,6 @@ $(document).ready(function () {
 
   /*  -----  NAV TOGGLE  -----  */
 
-
-
   $(".nav__toggle").click(function () {
     $(".nav__navbar").slideToggle();
     $(this).toggleClass("active");
@@ -18,11 +16,7 @@ $(document).ready(function () {
   }
 
 
-
-
   /*  -----  FIXED NAV  -----  */
-
-
 
   $(window).scroll(function () {
     if ($(document).scrollTop() > 300) {
@@ -31,12 +25,7 @@ $(document).ready(function () {
       $('#nav').removeClass('nav--fixed');
     }
   });
-
-
-
   /*  ----- SCROLL NAV -----  */
-
-
 
   $('nav a').click(function (event) {
     var id = $(this).attr("href");
@@ -48,7 +37,6 @@ $(document).ready(function () {
     }, 500);
     event.preventDefault();
   });
-
-
-
 });
+
+
