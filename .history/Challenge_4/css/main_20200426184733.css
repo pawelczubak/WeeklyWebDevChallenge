@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/1.5 'Roboto', sans-serif;
+    color: #475055;
+    background-color: #49627f;
+
+}
