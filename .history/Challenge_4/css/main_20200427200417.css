@@ -152,52 +152,24 @@ body {
 
 .social-section__socials-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
 .socials-container__socials-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     list-style: none;
-    width: calc(50% - 7.5px);
     background-color: #ffffff;
-    padding: 30px 0 30px 28px;
-
 }
 
 .socials-container__socials-items {}
 
 .social-link__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 32px;
-    width: 32px;
-    background-color: #c5cdd1;
-    border-radius: 50%;
-    margin: 0 18px 0 0;
+    height: 50px;
+    width: 50px;
+    background-color: #49627f;
 }
 
 .socials-container__socials-link {
-    display: flex;
-    align-items: center;
     text-decoration: none;
     color: #475055;
-
-}
-
-.socials-container__socials-link:hover {
-    color: #4fc6f8;
-}
-
-.socials-container__socials-link:hover .social-link__icon {
-    background-color: #4fc6f8;
-}
-
-.socials-container__follow-items {
-    width: calc(50% - 7.5px);
 }
 
 /*------------------  SOCIAL SECTION END  ------------------*/

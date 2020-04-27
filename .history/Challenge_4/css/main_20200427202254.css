@@ -152,18 +152,12 @@ body {
 
 .social-section__socials-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
 .socials-container__socials-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     list-style: none;
-    width: calc(50% - 7.5px);
     background-color: #ffffff;
-    padding: 30px 0 30px 28px;
+    padding: 30px 28px 30px 0;
 
 }
 
@@ -186,18 +180,6 @@ body {
     text-decoration: none;
     color: #475055;
 
-}
-
-.socials-container__socials-link:hover {
-    color: #4fc6f8;
-}
-
-.socials-container__socials-link:hover .social-link__icon {
-    background-color: #4fc6f8;
-}
-
-.socials-container__follow-items {
-    width: calc(50% - 7.5px);
 }
 
 /*------------------  SOCIAL SECTION END  ------------------*/

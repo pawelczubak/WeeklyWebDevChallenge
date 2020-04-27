@@ -188,14 +188,6 @@ body {
 
 }
 
-.socials-container__socials-link:hover {
-    color: #4fc6f8;
-}
-
-.socials-container__socials-link:hover .social-link__icon {
-    background-color: #4fc6f8;
-}
-
 .socials-container__follow-items {
     width: calc(50% - 7.5px);
 }

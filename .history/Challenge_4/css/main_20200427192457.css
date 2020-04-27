@@ -1,0 +1,202 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------  GLOBAL START  ------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px 'Roboto', sans-serif;
+    color: #475055;
+    background-color: #49627f;
+}
+
+.container {
+    max-width: 1000px;
+    min-height: 700px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+/*------------------  GLOBAL END  ------------------*/
+/*------------------  NAV START  ------------------*/
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #56ccc8;
+    width: 60px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.nav-button:hover {
+    background-color: #56ddd8;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-list__item {
+    padding-left: 45px;
+    display: flex;
+    align-items: center
+}
+
+.nav-list__link {
+    text-decoration: none;
+    color: #475055;
+}
+
+.nav-list__link:hover {
+    color: #56ccc8;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-icons__search {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link__icon {}
+
+.nav-icons__social-list {
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    padding: 0 15px;
+}
+
+.nav-icons__social-list::before,
+.nav-icons__social-list::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #dde2e4;
+}
+
+.nav-icons__social-list::after {
+    left: 0;
+}
+
+.nav-icons__social-list::before {
+    right: 0;
+}
+
+.nav-icons__social-icons {
+    list-style: none;
+}
+
+.nav-icons__acount {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link__icon:hover .nav-icons__svg {
+    fill: #152840;
+}
+
+/*------------------  NAV END  ------------------*/
+/*------------------  MAIN START  ------------------*/
+.main {
+    display: flex;
+}
+
+/*------------------  MENU SECTION START  ------------------*/
+.menu-section {
+    heignt: 500px;
+    /*      ONLY FOR TEST !!!!!!
+}
+/*------------------  MENU SECTION END  ------------------*/
+    /*------------------  SOCIAL SECTION START  ------------------*/
+    /*------------------  SOCIAL SECTION END  ------------------*/
+
+    /*------------------  MAIN END  ------------------*/
+
+    /*------------------  MEDIAQUERY START  ------------------*/
+
+    @media screen and (max-width: 1024px) {
+        .container {
+            max-width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .container {
+            margin: 15px auto;
+        }
+
+        /*------------------  NAV START  ------------------*/
+        .nav-button {
+            pointer-events: all;
+        }
+
+        .nav-list {
+            position: absolute;
+            flex-direction: column;
+            background-color: #ffffff;
+            width: 50%;
+            top: 60px;
+            left: 0;
+            height: 500px;
+            justify-content: space-around;
+            align-items: center;
+            transform: translateX(-101%);
+            transition: all 0.2s ease-in;
+        }
+
+        .nav-list__item {
+            opacity: 0;
+            padding: 0;
+        }
+
+        /*------------------  NAV END  ------------------*/
+    }
+
+    .nav-list--active {
+        transform: translateX(0%);
+    }
+
+    /*------------------  MEDIAQUERY END  ------------------*/
+
+    /*------------------  ANIMATIONS  ------------------*/
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
