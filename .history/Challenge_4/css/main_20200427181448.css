@@ -17,8 +17,8 @@ body {
 
 .container {
     max-width: 1000px;
-    min-height: 700px;
     margin: 100px auto;
+    background: white;
     overflow: hidden;
 }
 
@@ -41,7 +41,7 @@ body {
     background-color: #56ccc8;
     width: 60px;
     cursor: pointer;
-    pointer-events: none;
+
 }
 
 .nav-button:hover {

@@ -17,9 +17,8 @@ body {
 
 .container {
     max-width: 1000px;
-    min-height: 700px;
     margin: 100px auto;
-    overflow: hidden;
+    background: white;
 }
 
 /*------------------  GLOBAL END  ------------------*/
@@ -41,7 +40,6 @@ body {
     background-color: #56ccc8;
     width: 60px;
     cursor: pointer;
-    pointer-events: none;
 }
 
 .nav-button:hover {
@@ -53,8 +51,6 @@ body {
     list-style: none;
 
 }
-
-
 
 .nav-list__item {
     padding-left: 45px;
@@ -129,19 +125,9 @@ body {
 
 /*------------------  NAV END  ------------------*/
 
-@media screen and (max-width: 1024px) {
-    .container {
-        max-width: 95%;
-    }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .container {
         margin: 15px auto;
-    }
-
-    .nav-button {
-        pointer-events: all;
     }
 
     .nav-list {
@@ -155,23 +141,25 @@ body {
         justify-content: space-around;
         align-items: center;
         transform: translateX(-100%);
-        transition: all 0.2s ease-in;
+        transition: all 0.5s ease-in-out;
     }
 
+
     .nav-list__item {
-        opacity: 0;
+
         padding: 0;
     }
 }
 
 .nav-list--active {
     transform: translateX(0%);
+
 }
 
 @keyframes navLinkFade {
     from {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(50px);
     }
 
     to {

@@ -17,8 +17,8 @@ body {
 
 .container {
     max-width: 1000px;
-    min-height: 700px;
     margin: 100px auto;
+    background: white;
     overflow: hidden;
 }
 
@@ -138,10 +138,6 @@ body {
 @media screen and (max-width: 800px) {
     .container {
         margin: 15px auto;
-    }
-
-    .nav-button {
-        pointer-events: all;
     }
 
     .nav-list {

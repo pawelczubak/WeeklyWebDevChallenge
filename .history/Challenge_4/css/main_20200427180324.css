@@ -17,9 +17,8 @@ body {
 
 .container {
     max-width: 1000px;
-    min-height: 700px;
     margin: 100px auto;
-    overflow: hidden;
+    background: white;
 }
 
 /*------------------  GLOBAL END  ------------------*/
@@ -41,7 +40,6 @@ body {
     background-color: #56ccc8;
     width: 60px;
     cursor: pointer;
-    pointer-events: none;
 }
 
 .nav-button:hover {
@@ -138,10 +136,6 @@ body {
 @media screen and (max-width: 800px) {
     .container {
         margin: 15px auto;
-    }
-
-    .nav-button {
-        pointer-events: all;
     }
 
     .nav-list {
