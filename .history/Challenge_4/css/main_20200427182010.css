@@ -126,15 +126,6 @@ body {
 }
 
 /*------------------  NAV END  ------------------*/
-/*------------------  MAIN START  ------------------*/
-/*------------------  MENU SECTION START  ------------------*/
-/*------------------  MENU SECTION END  ------------------*/
-/*------------------  SOCIAL SECTION START  ------------------*/
-/*------------------  SOCIAL SECTION END  ------------------*/
-
-/*------------------  MAIN END  ------------------*/
-
-/*------------------  MEDIAQUERY START  ------------------*/
 
 @media screen and (max-width: 1024px) {
     .container {
@@ -162,7 +153,7 @@ body {
         height: 500px;
         justify-content: space-around;
         align-items: center;
-        transform: translateX(-101%);
+        transform: translateX(-100%);
         transition: all 0.2s ease-in;
     }
 
@@ -177,8 +168,6 @@ body {
 .nav-list--active {
     transform: translateX(0%);
 }
-
-/*------------------  MEDIAQUERY END  ------------------*/
 
 /*------------------  ANIMATIONS  ------------------*/
 @keyframes navLinkFade {

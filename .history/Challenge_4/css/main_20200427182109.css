@@ -126,15 +126,6 @@ body {
 }
 
 /*------------------  NAV END  ------------------*/
-/*------------------  MAIN START  ------------------*/
-/*------------------  MENU SECTION START  ------------------*/
-/*------------------  MENU SECTION END  ------------------*/
-/*------------------  SOCIAL SECTION START  ------------------*/
-/*------------------  SOCIAL SECTION END  ------------------*/
-
-/*------------------  MAIN END  ------------------*/
-
-/*------------------  MEDIAQUERY START  ------------------*/
 
 @media screen and (max-width: 1024px) {
     .container {
@@ -177,8 +168,6 @@ body {
 .nav-list--active {
     transform: translateX(0%);
 }
-
-/*------------------  MEDIAQUERY END  ------------------*/
 
 /*------------------  ANIMATIONS  ------------------*/
 @keyframes navLinkFade {
