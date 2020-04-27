@@ -38,12 +38,8 @@ body {
     justify-content: center;
     background-color: #56ccc8;
     width: 60px;
-    cursor: pointer;
 }
 
-.nav-button:hover {
-    background-color: #56ddd8;
-}
 
 .nav-list {
     display: flex;
@@ -107,6 +103,9 @@ body {
 .nav-icons__social-list::before {
     right: 0;
 }
+
+
+
 
 .nav-icons__social-icons {
     list-style: none;

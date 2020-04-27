@@ -41,9 +41,6 @@ body {
     cursor: pointer;
 }
 
-.nav-button:hover {
-    background-color: #56ddd8;
-}
 
 .nav-list {
     display: flex;
