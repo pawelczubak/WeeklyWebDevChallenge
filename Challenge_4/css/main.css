@@ -24,6 +24,7 @@ body {
 /*------------------  GLOBAL END  ------------------*/
 /*------------------  NAV START  ------------------*/
 .nav {
+    position: relative;
     display: flex;
     justify-content: left;
     width: 100%;
@@ -123,3 +124,29 @@ body {
 }
 
 /*------------------  NAV END  ------------------*/
+
+@media screen and (max-width: 1000px) {
+    .container {
+        margin: 15px auto;
+    }
+
+    .nav-list {
+        position: absolute;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        height: 300px;
+        justify-content: space-around;
+        align-items: center;
+}
+    .nav-list--active {
+        height: 0;
+        transition: all 0.5s ease-in;
+}
+
+.nav-list__item {
+    padding: 0;
+}
+}
