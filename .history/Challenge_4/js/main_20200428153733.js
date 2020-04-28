@@ -19,26 +19,51 @@ const navSlide = () => {
 
         });
     });
+
+
 }
+
 navSlide();
 
 
-// Facebook widget Animation
-let fallowButtonFb = () => {
-    let twitterWidget = document.querySelector("#facebook");
-    let btnFallow = twitterWidget.querySelector('.fallow-user__button');
-    let result = twitterWidget.querySelector('.fallow-user__fallow');
+
+
+
+/*
+
+let fallowButton = () => {
+    let btnFallow = document.querySelector('.fallow-user__button');
+    let result = document.querySelector('.fallow-user__fallow');
 
     btnFallow.addEventListener('click', () => {
         result.classList.toggle('fallow-user__fallow--active');
         btnFallow.classList.toggle('fallow-user__button--active');
     });
 }
-fallowButtonFb();
+fallowButton();
 
-// Twitter widget Animation
+
 
 let fallowButtonTwitter = () => {
+    let twitterWidget = document.querySelector("#twitter");
+
+    let btnFallow = document.querySelector(".fallow-user__button");
+    let result = document.querySelector(".fallow-user__fallow");
+
+    btnFallow.addEventListener('click', () => {
+        result.classList.toggle('.fallow-user__fallow--active');
+        btnFallow.classList.toggle('.fallow-user__button--active');
+    });
+
+}
+
+fallowButtonTwitter();
+
+console.log(result);
+*/
+
+
+let fallowButton = () => {
     let twitterWidget = document.querySelector("#twitter");
     let btnFallow = twitterWidget.querySelector('.fallow-user__button');
     let result = twitterWidget.querySelector('.fallow-user__fallow');
@@ -48,4 +73,4 @@ let fallowButtonTwitter = () => {
         btnFallow.classList.toggle('fallow-user__button--active');
     });
 }
-fallowButtonTwitter();
+fallowButton();

@@ -19,11 +19,48 @@ const navSlide = () => {
 
         });
     });
+
+
 }
+
 navSlide();
 
 
-// Facebook widget Animation
+
+
+
+/*
+
+let fallowButton = () => {
+    let btnFallow = document.querySelector('.fallow-user__button');
+    let result = document.querySelector('.fallow-user__fallow');
+
+    btnFallow.addEventListener('click', () => {
+        result.classList.toggle('fallow-user__fallow--active');
+        btnFallow.classList.toggle('fallow-user__button--active');
+    });
+}
+fallowButton();
+
+
+
+let fallowButtonTwitter = () => {
+    let twitterWidget = document.querySelector("#twitter");
+
+    let btnFallow = document.querySelector(".fallow-user__button");
+    let result = document.querySelector(".fallow-user__fallow");
+
+    btnFallow.addEventListener('click', () => {
+        result.classList.toggle('.fallow-user__fallow--active');
+        btnFallow.classList.toggle('.fallow-user__button--active');
+    });
+
+}
+
+fallowButtonTwitter();
+
+console.log(result);
+*/
 let fallowButtonFb = () => {
     let twitterWidget = document.querySelector("#facebook");
     let btnFallow = twitterWidget.querySelector('.fallow-user__button');
@@ -35,8 +72,6 @@ let fallowButtonFb = () => {
     });
 }
 fallowButtonFb();
-
-// Twitter widget Animation
 
 let fallowButtonTwitter = () => {
     let twitterWidget = document.querySelector("#twitter");

@@ -19,8 +19,14 @@ const navSlide = () => {
 
         });
     });
+
+
 }
+
 navSlide();
+
+
+
 
 
 // Facebook widget Animation
