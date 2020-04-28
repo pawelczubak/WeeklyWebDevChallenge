@@ -467,9 +467,7 @@ body {
         margin: 20px;
     }
 
-    .newsletter__button {
-        margin: 0 20px 20px;
-    }
+    .newsletter__button
 }
 
 /*------------------  MEDIAQUERY END  ------------------*/

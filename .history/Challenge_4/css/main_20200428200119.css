@@ -292,8 +292,7 @@ body {
 
 .social-section__paragraph {
     font-size: 15px;
-    margin: 10px 15px 25px 15px;
-    text-align: center;
+    margin: 10px 0 25px 0;
 }
 
 .sign-in__list {
@@ -389,16 +388,10 @@ body {
 
 @media screen and (max-width: 834px) {
     .container {
-        width: 80%;
         margin: 15px auto;
     }
 
     /*------------------  NAV START  ------------------*/
-    .nav {
-
-        margin: 15px auto 15px auto;
-    }
-
     .nav-button {
         pointer-events: all;
     }
@@ -427,12 +420,12 @@ body {
     }
 
     .menu-section {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
     }
 
     .social-section {
-        width: 100%;
+        width: 80%;
         margin: 15px auto 15px auto;
     }
 
@@ -441,35 +434,6 @@ body {
 
 .nav-list--active {
     transform: translateX(0%);
-}
-
-@media screen and (max-width: 520px) {
-
-    .social-section__socials-container {
-        flex-direction: column;
-    }
-
-    .socials-container__socials-list {
-        height: 270px;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .socials-container__follow-items {
-        width: 100%;
-    }
-
-    .newsletter__form {
-        flex-direction: column;
-    }
-
-    .newsletter__input {
-        margin: 20px;
-    }
-
-    .newsletter__button {
-        margin: 0 20px 20px;
-    }
 }
 
 /*------------------  MEDIAQUERY END  ------------------*/

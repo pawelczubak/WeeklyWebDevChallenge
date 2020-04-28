@@ -459,17 +459,7 @@ body {
         width: 100%;
     }
 
-    .newsletter__form {
-        flex-direction: column;
-    }
 
-    .newsletter__input {
-        margin: 20px;
-    }
-
-    .newsletter__button {
-        margin: 0 20px 20px;
-    }
 }
 
 /*------------------  MEDIAQUERY END  ------------------*/

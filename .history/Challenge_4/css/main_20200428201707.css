@@ -292,8 +292,7 @@ body {
 
 .social-section__paragraph {
     font-size: 15px;
-    margin: 10px 15px 25px 15px;
-    text-align: center;
+    margin: 10px 0 25px 0;
 }
 
 .sign-in__list {
@@ -459,17 +458,8 @@ body {
         width: 100%;
     }
 
-    .newsletter__form {
-        flex-direction: column;
-    }
-
-    .newsletter__input {
-        margin: 20px;
-    }
-
-    .newsletter__button {
-        margin: 0 20px 20px;
-    }
+    .socials-container__facebook-widget,
+    .socials-container__twitter-widget {}
 }
 
 /*------------------  MEDIAQUERY END  ------------------*/
