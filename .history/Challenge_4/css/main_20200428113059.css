@@ -223,7 +223,6 @@ body {
 
 .social-container__fallow-user {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -239,7 +238,6 @@ body {
 
 
 .fallow-user__button {
-
     width: 24px;
     height: 24px;
     background-image: url('../img/follow-img.png');
@@ -252,19 +250,16 @@ body {
 }
 
 .fallow-user__fallow {
-    margin: 0 15px 0 auto;
-
     display: block;
     position: relative;
     font-size: 16px;
-    font-weight: 300;
-    color: #ffffff;
+    font-weight: normal;
 }
 
 .fallow-user__fallow::before {
     position: absolute;
     content: 'Fallow';
-    top: -8px;
+    top: -5px;
     right: 0;
 }
 
@@ -275,7 +270,7 @@ body {
 .fallow-user__fallow--active::before {
     position: absolute;
     content: 'Fallowing';
-    top: -8px;
+    top: 0;
     right: 0;
 }
 

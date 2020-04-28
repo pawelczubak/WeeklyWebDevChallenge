@@ -32,12 +32,12 @@ navSlide();
 
 
 let fallowButton = () => {
-    let btnFallow = document.querySelector('.fallow-user__button');
-    let result = document.querySelector('.fallow-user__fallow');
+    let btnShow = document.querySelector('.fallow-user__button');
+    let result = document.querySelector('.test__h1');
 
-    btnFallow.addEventListener('click', () => {
-        result.classList.toggle('fallow-user__fallow--active');
-        btnFallow.classList.toggle('fallow-user__button--active');
+    btnShow.addEventListener('click', () => {
+        result.classList.toggle('test__h1--active');
+        btnShow.classList.toggle('fallow-user__button--active');
     });
 }
 fallowButton();

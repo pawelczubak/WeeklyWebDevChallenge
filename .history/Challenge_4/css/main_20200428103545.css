@@ -201,32 +201,21 @@ body {
 }
 
 .socials-container__facebook-widget {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 24px 15px 24px 27px;
     height: 180px;
     background-color: #4d6baa;
     margin-bottom: 15px;
 }
 
 .socials-container__twitter-widget {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 24px 15px 24px 27px;
     height: 180px;
     background-color: #4fc6f8;
 }
 
-.social-container__svg {}
-
-.social-container__fallow-user {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+.social-container__svg {
+    margin: 24px 0 0 27px;
 }
+
+.social-container__fallow-user {}
 
 .fallow-user__counter {
     color: #ffffff;
@@ -239,11 +228,12 @@ body {
 
 
 .fallow-user__button {
-
     width: 24px;
     height: 24px;
     background-image: url('../img/follow-img.png');
 }
+
+
 
 .fallow-user__button--active {
     width: 24px;
@@ -251,21 +241,19 @@ body {
     background-image: url('../img/fallowing-img.png');
 }
 
-.fallow-user__fallow {
-    margin: 0 15px 0 auto;
 
-    display: block;
+
+
+
+.fallow-user__fallow {
     position: relative;
-    font-size: 16px;
-    font-weight: 300;
-    color: #ffffff;
 }
 
 .fallow-user__fallow::before {
     position: absolute;
     content: 'Fallow';
-    top: -8px;
-    right: 0;
+    top: 0;
+    left: 0;
 }
 
 .fallow-user__fallow--active {
@@ -275,8 +263,8 @@ body {
 .fallow-user__fallow--active::before {
     position: absolute;
     content: 'Fallowing';
-    top: -8px;
-    right: 0;
+    top: 0;
+    left: 0;
 }
 
 /*------------------  ttttttttttttteeeeeeeeeeeeeeedsssssssssstttttttt  ------------------*/

@@ -26,18 +26,10 @@ const navSlide = () => {
 navSlide();
 
 
+let btnShow = document.querySelector('.test__button');
+let result = document.querySelector('.test__h1');
 
-
-
-
-
-let fallowButton = () => {
-    let btnFallow = document.querySelector('.fallow-user__button');
-    let result = document.querySelector('.fallow-user__fallow');
-
-    btnFallow.addEventListener('click', () => {
-        result.classList.toggle('fallow-user__fallow--active');
-        btnFallow.classList.toggle('fallow-user__button--active');
-    });
-}
-fallowButton();
+btnShow.addEventListener('click'.() => {
+    let checkbox = document.querySelector('input[type="checkbox"]:checked');
+    result.innerText = checkbox.value;
+});

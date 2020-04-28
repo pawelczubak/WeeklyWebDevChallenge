@@ -31,7 +31,18 @@ navSlide();
 
 
 
-let fallowButton = () => {
+let fallowButtonFb = () => {
+    let btnFallow = document.querySelector('.socials-container__facebook-widget .fallow-user__button');
+    let result = document.querySelector('.socials-container__facebook-widget .fallow-user__fallow');
+
+    btnFallow.addEventListener('click', () => {
+        result.classList.toggle('.socials-container__facebook-widget .fallow-user__fallow--active');
+        btnFallow.classList.toggle('.socials-container__facebook-widget .fallow-user__button--active');
+    });
+}
+fallowButtonFb();
+
+let fallowButtonTwitter = () => {
     let btnFallow = document.querySelector('.fallow-user__button');
     let result = document.querySelector('.fallow-user__fallow');
 
@@ -40,4 +51,4 @@ let fallowButton = () => {
         btnFallow.classList.toggle('fallow-user__button--active');
     });
 }
-fallowButton();
+fallowButtonTwitter();

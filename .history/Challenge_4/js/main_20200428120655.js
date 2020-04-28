@@ -31,13 +31,13 @@ navSlide();
 
 
 
-let fallowButton = () => {
+let fallowButtonFb = () => {
     let btnFallow = document.querySelector('.fallow-user__button');
     let result = document.querySelector('.fallow-user__fallow');
 
-    btnFallow.addEventListener('click', () => {
+    btnFallowFb.addEventListener('click', () => {
         result.classList.toggle('fallow-user__fallow--active');
         btnFallow.classList.toggle('fallow-user__button--active');
     });
 }
-fallowButton();
+fallowButtonFb();

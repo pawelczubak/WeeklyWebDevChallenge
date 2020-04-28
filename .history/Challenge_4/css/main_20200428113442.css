@@ -239,7 +239,6 @@ body {
 
 
 .fallow-user__button {
-
     width: 24px;
     height: 24px;
     background-image: url('../img/follow-img.png');
@@ -252,8 +251,6 @@ body {
 }
 
 .fallow-user__fallow {
-    margin: 0 15px 0 auto;
-
     display: block;
     position: relative;
     font-size: 16px;

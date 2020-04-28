@@ -223,7 +223,6 @@ body {
 
 .social-container__fallow-user {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -239,7 +238,6 @@ body {
 
 
 .fallow-user__button {
-
     width: 24px;
     height: 24px;
     background-image: url('../img/follow-img.png');
@@ -252,20 +250,15 @@ body {
 }
 
 .fallow-user__fallow {
-    margin: 0 15px 0 auto;
-
     display: block;
     position: relative;
-    font-size: 16px;
-    font-weight: 300;
-    color: #ffffff;
 }
 
 .fallow-user__fallow::before {
     position: absolute;
     content: 'Fallow';
-    top: -8px;
-    right: 0;
+    top: -50px;
+    left: 0;
 }
 
 .fallow-user__fallow--active {
@@ -275,8 +268,8 @@ body {
 .fallow-user__fallow--active::before {
     position: absolute;
     content: 'Fallowing';
-    top: -8px;
-    right: 0;
+    top: 0;
+    left: 0;
 }
 
 /*------------------  ttttttttttttteeeeeeeeeeeeeeedsssssssssstttttttt  ------------------*/

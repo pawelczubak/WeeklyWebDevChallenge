@@ -31,13 +31,24 @@ navSlide();
 
 
 
-let fallowButton = () => {
+let fallowButtonFb = () => {
     let btnFallow = document.querySelector('.fallow-user__button');
     let result = document.querySelector('.fallow-user__fallow');
 
     btnFallow.addEventListener('click', () => {
-        result.classList.toggle('fallow-user__fallow--active');
-        btnFallow.classList.toggle('fallow-user__button--active');
+        result.classList.toggle('.fallow-user__fallow--active');
+        btnFallow.classList.toggle('.fallow-user__button--active');
     });
 }
-fallowButton();
+fallowButtonFb();
+
+let fallowButtonTwitter = () => {
+    let btnFallow = document.querySelector('#twitter__button');
+    let result = document.querySelector('#twitter__fallow');
+
+    btnFallow.addEventListener('click', () => {
+        result.classList.toggle('.fallow-user__fallow--active');
+        btnFallow.classList.toggle('.fallow-user__button--active');
+    });
+}
+fallowButtonTwitter();

@@ -32,8 +32,8 @@ navSlide();
 
 
 let fallowButton = () => {
-    let btnFallow = document.querySelector('.fallow-user__button');
-    let result = document.querySelector('.fallow-user__fallow');
+    let btnFallow = document.querySelectorAll('.fallow-user__button');
+    let result = document.querySelectorAll('.fallow-user__fallow');
 
     btnFallow.addEventListener('click', () => {
         result.classList.toggle('fallow-user__fallow--active');
