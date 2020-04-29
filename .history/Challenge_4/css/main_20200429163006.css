@@ -628,14 +628,6 @@ body {
         flex-direction: column;
     }
 
-    .app-menu {
-        width: 50%;
-    }
-
-    .app-submenu {
-        width: 50%;
-    }
-
     .app-menu__contact {
         padding: 15px 0;
     }

@@ -610,7 +610,9 @@ body {
         padding: 0;
     }
 
-
+    .main {
+        flex-direction: column;
+    }
 
     .menu-section {
         width: 100%;
@@ -623,19 +625,6 @@ body {
     }
 
     /*------------------  NAV END  ------------------*/
-
-    .main {
-        flex-direction: column;
-    }
-
-    .app-menu {
-        width: 50%;
-    }
-
-    .app-submenu {
-        width: 50%;
-    }
-
     .app-menu__contact {
         padding: 15px 0;
     }
@@ -670,16 +659,8 @@ body {
         margin-top: 0;
     }
 
-    .menu-section {
-        flex-direction: column;
-    }
-
     .app-submenu {
-        width: 100%;
-    }
-
-    .app-submenu__item-content {
-        margin: 5px 0;
+        display: none;
     }
 
     .app-menu {

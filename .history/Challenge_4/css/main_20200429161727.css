@@ -602,7 +602,6 @@ body {
         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
         transform: translateX(-101%);
         transition: all 0.2s ease-in;
-        z-index: 10;
     }
 
     .nav-list__item {
@@ -610,7 +609,9 @@ body {
         padding: 0;
     }
 
-
+    .main {
+        flex-direction: column;
+    }
 
     .menu-section {
         width: 100%;
@@ -623,25 +624,8 @@ body {
     }
 
     /*------------------  NAV END  ------------------*/
-
-    .main {
-        flex-direction: column;
-    }
-
-    .app-menu {
-        width: 50%;
-    }
-
-    .app-submenu {
-        width: 50%;
-    }
-
     .app-menu__contact {
-        padding: 15px 0;
-    }
-
-    .app-menu__record-container:nth-child(2) {
-        margin: 15px 0;
+        padding
     }
 
     .record {
@@ -668,26 +652,6 @@ body {
 
     .nav {
         margin-top: 0;
-    }
-
-    .menu-section {
-        flex-direction: column;
-    }
-
-    .app-submenu {
-        width: 100%;
-    }
-
-    .app-submenu__item-content {
-        margin: 5px 0;
-    }
-
-    .app-menu {
-        width: 100%;
-    }
-
-    .app-menu__contact {
-        display: none;
     }
 
     .social-section__socials-container {

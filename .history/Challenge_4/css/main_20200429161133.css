@@ -231,7 +231,7 @@ body {
     position: absolute;
     left: 30px;
     top: 0;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 
 
 }
@@ -558,17 +558,6 @@ body {
     .container {
         max-width: 95%;
     }
-
-    .record {
-        font-size: 13px;
-        padding-left: 50px;
-    }
-
-    .app-menu__contact-svg {
-
-        left: 25px;
-    }
-
 }
 
 @media screen and (max-width: 834px) {
@@ -602,7 +591,6 @@ body {
         box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
         transform: translateX(-101%);
         transition: all 0.2s ease-in;
-        z-index: 10;
     }
 
     .nav-list__item {
@@ -610,7 +598,9 @@ body {
         padding: 0;
     }
 
-
+    .main {
+        flex-direction: column;
+    }
 
     .menu-section {
         width: 100%;
@@ -623,37 +613,6 @@ body {
     }
 
     /*------------------  NAV END  ------------------*/
-
-    .main {
-        flex-direction: column;
-    }
-
-    .app-menu {
-        width: 50%;
-    }
-
-    .app-submenu {
-        width: 50%;
-    }
-
-    .app-menu__contact {
-        padding: 15px 0;
-    }
-
-    .app-menu__record-container:nth-child(2) {
-        margin: 15px 0;
-    }
-
-    .record {
-        font-size: 14px;
-        padding-left: 60px;
-    }
-
-    .app-menu__contact-svg {
-
-        left: 30px;
-    }
-
 }
 
 .nav-list--active {
@@ -668,26 +627,6 @@ body {
 
     .nav {
         margin-top: 0;
-    }
-
-    .menu-section {
-        flex-direction: column;
-    }
-
-    .app-submenu {
-        width: 100%;
-    }
-
-    .app-submenu__item-content {
-        margin: 5px 0;
-    }
-
-    .app-menu {
-        width: 100%;
-    }
-
-    .app-menu__contact {
-        display: none;
     }
 
     .social-section__socials-container {
