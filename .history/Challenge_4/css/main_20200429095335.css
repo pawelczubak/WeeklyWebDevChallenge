@@ -133,38 +133,12 @@ body {
 }
 
 /*------------------  MENU SECTION START  ------------------*/
-
-
-
-
-
-
-
-
-
-
-
 .menu-section {
     width: 50%;
-
-
+    /*    !!!!!!!!!!  ONLY FOR TEST !!!!!! */
+    height: 500px;
+    background-color: chocolate;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*------------------  MENU SECTION END  ------------------*/
 /*------------------  SOCIAL SECTION START  ------------------*/

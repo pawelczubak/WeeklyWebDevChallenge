@@ -146,8 +146,9 @@ body {
 
 .menu-section {
     width: 50%;
-
-
+    /*    !!!!!!!!!!  ONLY FOR TEST !!!!!! */
+    height: 500px;
+    background-color: chocolate;
 }
 
 
