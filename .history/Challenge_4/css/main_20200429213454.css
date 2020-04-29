@@ -527,6 +527,26 @@ body {
 /*------------------  SLIDER START  ------------------*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slider__container {
     width: 100%;
     margin: 0 auto 15px auto;
@@ -661,6 +681,30 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------  SLIDER END  ------------------*/
 
 /*------------------  MEDIAQUERY START  ------------------*/
@@ -770,9 +814,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 50px;
+        top: 20px;
         left: 50%;
-        width: 330px;
+        width: 230px;
         transform: translateX(-50%)
     }
 
@@ -847,12 +891,6 @@ body {
 
     .newsletter__button {
         margin: 0 20px 20px;
-    }
-
-    .slider__description {
-        top: 30px;
-        width: 230px;
-
     }
 }
 

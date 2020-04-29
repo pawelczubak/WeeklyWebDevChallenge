@@ -64,7 +64,6 @@ body {
     display: inline;
     text-decoration: none;
     color: #475055;
-    transition: all .1s ease-in;
 }
 
 .nav-list__link:hover {
@@ -124,10 +123,6 @@ body {
 
 }
 
-.nav-icons__svg {
-    transition: all .1s ease-in;
-}
-
 .nav-link__icon:hover .nav-icons__svg {
     fill: #152840;
 }
@@ -159,7 +154,6 @@ body {
     background-color: #ffffff;
     height: 60px;
     margin-bottom: 1px;
-    transition: all .1s ease-in;
 }
 
 .app-menu__item-svg {
@@ -168,7 +162,6 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
-
 }
 
 .app-menu__link {
@@ -191,10 +184,6 @@ body {
 
 .app-menu__link:hover {
     color: #ffffff;
-}
-
-.app-menu__item-svg path {
-    transition: all .1s ease-in;
 }
 
 .app-menu__item:hover .app-menu__item-svg path {
@@ -251,7 +240,6 @@ body {
     padding: 20px 30px 20px 30px;
     margin-bottom: 1px;
     background-color: #152840;
-    transition: all .1s ease-in;
 }
 
 .app-submenu__item:nth-child(2) {
@@ -316,7 +304,7 @@ body {
 
 }
 
-
+.socials-container__socials-items {}
 
 .social-link__icon {
     display: flex;
@@ -327,7 +315,6 @@ body {
     background-color: #c5cdd1;
     border-radius: 50%;
     margin: 0 18px 0 0;
-    transition: all .1s ease-in;
 }
 
 .socials-container__socials-link {
@@ -448,6 +435,8 @@ body {
     list-style: none;
 }
 
+.sign-in__item {}
+
 .sign-in__link {
     display: flex;
     justify-content: center;
@@ -527,6 +516,26 @@ body {
 /*------------------  SLIDER START  ------------------*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slider__container {
     width: 100%;
     margin: 0 auto 15px auto;
@@ -561,10 +570,9 @@ body {
     top: 38px;
     color: #ffffff;
     width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
+
+
 
 .slider__description-header {
     font-size: 46px;
@@ -659,6 +667,30 @@ body {
 .slider__dot.selected {
     background: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*------------------  SLIDER END  ------------------*/
@@ -765,28 +797,6 @@ body {
         left: 30px;
     }
 
-    .slider__description {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: 50px;
-        left: 50%;
-        width: 330px;
-        transform: translateX(-50%)
-    }
-
-    .slider__description-text {
-        text-align: center;
-    }
-
-    .slider__description-header {
-        font-size: 30px;
-    }
-
-    .slider__carousel {
-        height: 350px;
-    }
 }
 
 .nav-list--active {
@@ -847,12 +857,6 @@ body {
 
     .newsletter__button {
         margin: 0 20px 20px;
-    }
-
-    .slider__description {
-        top: 30px;
-        width: 230px;
-
     }
 }
 

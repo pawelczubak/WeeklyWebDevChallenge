@@ -64,8 +64,8 @@ const right = document.querySelector('.right');
 
 const slider = document.querySelector('.slider');
 
-const indicatorParent = document.querySelector('.slider__dots-list');
-const indicators = document.querySelectorAll('.slider__dot');
+const indicatorParent = document.querySelector('.slider__control ul');
+const indicators = document.querySelectorAll('.slider__control li');
 index = 0;
 
 indicators.forEach((indicator, i) => {
