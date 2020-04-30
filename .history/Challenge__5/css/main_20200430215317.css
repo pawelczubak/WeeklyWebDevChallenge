@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------  GLOBAL START  ------------------*/
+/*------------------  GLOBAL END  ------------------*/
+body {
+    font: 14px 'Open Sans', sans-serif;
+    color: #ffffff;
+    background-color: #161828;
+}

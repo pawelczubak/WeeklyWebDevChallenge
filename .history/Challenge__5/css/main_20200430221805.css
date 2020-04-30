@@ -34,7 +34,6 @@ body {
     margin: 0 auto;
     height: 100%;
     width: 1185px;
-    align-items: center;
     justify-content: flex-end;
 }
 
@@ -45,9 +44,7 @@ body {
 
 }
 
-.nav__item {
-    margin-left: 50px;
-}
+.nav__item {}
 
 .nav__link {
     text-decoration: none;

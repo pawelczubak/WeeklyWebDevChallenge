@@ -24,7 +24,6 @@ body {
     position: fixed;
     width: 100vw;
     height: 84px;
-    background-color: #000000;
 }
 
 .nav__list {
@@ -34,20 +33,16 @@ body {
     margin: 0 auto;
     height: 100%;
     width: 1185px;
-    align-items: center;
     justify-content: flex-end;
 }
 
 
 .nav__logo {
     position: absolute;
-    left: 0;
 
 }
 
-.nav__item {
-    margin-left: 50px;
-}
+.nav__item {}
 
 .nav__link {
     text-decoration: none;
