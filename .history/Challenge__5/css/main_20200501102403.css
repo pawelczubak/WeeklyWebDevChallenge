@@ -50,8 +50,7 @@ body {
 .nav__logo {
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%)
+
 }
 
 .nav__item {

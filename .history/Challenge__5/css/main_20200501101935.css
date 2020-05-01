@@ -28,20 +28,17 @@ body {
 }
 
 .nav__container {
-    position: relative;
-    width: 1185px;
-    margin: 0 auto;
     height: 100%;
-
+    width: 100%;
 }
 
 .nav__list {
     position: relative;
     display: flex;
     list-style: none;
-
+    margin: 0 auto;
     height: 100%;
-    width: 100%;
+    width: 1185px;
     align-items: center;
     justify-content: flex-end;
 }
@@ -50,8 +47,7 @@ body {
 .nav__logo {
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%)
+
 }
 
 .nav__item {
