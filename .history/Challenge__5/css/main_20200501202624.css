@@ -68,10 +68,6 @@ body {
     margin-left: 50px;
 }
 
-.nav__link:hover {
-    color: #ea5b58;
-}
-
 /*------------------  NAV END  ------------------*/
 
 /*------------------  MAIN START  ------------------*/
@@ -97,26 +93,10 @@ body {
     padding: 50px 0;
 }
 
-.slider::after {
-    position: absolute;
-    content: "";
-    background-image: url(../img/bg_img_slider.png);
-    top: 40px;
-    left: 5px;
-    width: 77%;
-    height: 100%;
-    z-index: 1;
-}
-
-.slider__box {
-    position: relative;
-    z-index: 2;
-}
+.slider__box {}
 
 .slider__img {
     width: 41%;
-    position: relative;
-    z-index: 2;
 }
 
 .slider__header {
@@ -137,10 +117,6 @@ body {
     background-color: #ea5b58;
     border: none;
     border-radius: 3px;
-}
-
-.slider__button:hover {
-    background-color: #ca3a36;
 }
 
 /*------------------  SLIDER END  ------------------*/

@@ -10,11 +10,11 @@
 
 
 body {
-
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14;
-    color: #ffffff;
+    height: 100%;
     width: 100%;
+    font: 14px 'Open Sans', sans-serif;
+    color: #ffffff;
+
 }
 
 
@@ -26,18 +26,15 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 84px;
     background-color: #000000;
-    padding: 0 15px;
-    display: flex;
-    justify-content: center;
 }
 
 .nav__container {
     position: relative;
-    width: 1170px;
-    margin: 0 15px;
+    width: 1185px;
+    margin: 0 auto;
     height: 100%;
 
 }
@@ -46,8 +43,9 @@ body {
     position: relative;
     display: flex;
     list-style: none;
-    height: 100%;
 
+    height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: flex-end;
 }
@@ -60,16 +58,14 @@ body {
     transform: translateY(-50%)
 }
 
-.nav__item {}
+.nav__item {
+    margin-left: 50px;
+}
 
 .nav__link {
     text-decoration: none;
     color: #ffffff;
-    margin-left: 50px;
-}
 
-.nav__link:hover {
-    color: #ea5b58;
 }
 
 /*------------------  NAV END  ------------------*/
@@ -77,70 +73,32 @@ body {
 /*------------------  MAIN START  ------------------*/
 
 /*------------------  MAIN END  ------------------*/
-
-
-/*------------------  SLIDER START  ------------------*/
-
 .slider__bg {
     background-color: #161828;
-    display: flex;
-    justify-content: center;
 }
 
 .slider {
     position: relative;
-    margin: 84px 15px 0 15px;
+    min-width: 1185px;
+    margin: 84PX auto 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1185px;
     padding: 50px 0;
 }
 
 .slider::after {
     position: absolute;
     content: "";
+    bottom: 0;
+    left: 0;
     background-image: url(../img/bg_img_slider.png);
-    top: 40px;
-    left: 5px;
-    width: 77%;
-    height: 100%;
-    z-index: 1;
+    height: 100px;
+    width: 100px;
 }
 
-.slider__box {
-    position: relative;
-    z-index: 2;
-}
+/*------------------  SLIDER START  ------------------*/
 
-.slider__img {
-    width: 41%;
-    position: relative;
-    z-index: 2;
-}
 
-.slider__header {
-    font-weight: bold;
-    font-size: 36px;
-}
-
-.slider__description {
-    font-size: 21px;
-    font-weight: 300;
-    margin: 40px 0 60px 0;
-}
-
-.slider__button {
-    font-size: 18px;
-    padding: 20px 47px;
-    color: #ffffff;
-    background-color: #ea5b58;
-    border: none;
-    border-radius: 3px;
-}
-
-.slider__button:hover {
-    background-color: #ca3a36;
-}
 
 /*------------------  SLIDER END  ------------------*/

@@ -108,15 +108,10 @@ body {
     z-index: 1;
 }
 
-.slider__box {
-    position: relative;
-    z-index: 2;
-}
+.slider__box {}
 
 .slider__img {
     width: 41%;
-    position: relative;
-    z-index: 2;
 }
 
 .slider__header {
@@ -140,7 +135,7 @@ body {
 }
 
 .slider__button:hover {
-    background-color: #ca3a36;
+    background-color: #fb6c69;
 }
 
 /*------------------  SLIDER END  ------------------*/
