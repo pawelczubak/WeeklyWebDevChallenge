@@ -17,36 +17,6 @@ body {
     width: 100%;
 }
 
-.decor__white {
-    position: relative;
-    width: 280px;
-    margin: 20px auto 80px;
-    border-bottom: #ffffff solid 1px;
-}
-
-.decor__white::before {
-    position: absolute;
-    content: '';
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background: #ffffff;
-    left: 0;
-    top: -6px;
-}
-
-.decor__white::after {
-    position: absolute;
-    content: '';
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background: #ffffff;
-    right: 0;
-    top: -6px;
-}
-
-.decor__black {}
 
 /*------------------  GLOBAL END  ------------------*/
 
@@ -182,91 +152,28 @@ body {
 .services {
     position: relative;
     margin: 0 15px;
-    max-width: 1185px;
-    padding: 70px 0 50px;
+    width: 1185px;
+    padding: 70px 0 100px;
 }
 
 .services__header {
     font-size: 30px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .services__descriprion {
     font-size: 16px;
-    text-align: center;
+    margin: 0 auto;
 }
 
-.services__container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 30px;
-}
+.services__container {}
 
-.service__box {
-    position: relative;
-    width: 270px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-}
+.service__box {}
 
-.service__box--after::after {
-    position: absolute;
-    content: '';
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: top;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
+.service__box-header {}
 
-.service__box--after:nth-child(1)::after {
-    background-image: url(../img/heart.png);
-}
+.service__box-description {}
 
-.service__box--after:nth-child(2)::after {
-    background-image: url(../img/globe.png);
-}
-
-.service__box--after:nth-child(3)::after {
-    background-image: url(../img/monitor.png);
-}
-
-.service__box--after:nth-child(4)::after {
-    background-image: url(../img/rocket.png);
-}
-
-.service__img {
-    margin-bottom: 30px;
-}
-
-.service__box-header {
-    position: relative;
-    font-size: 18px;
-    padding-top: 60px;
-}
-
-
-
-.service__box-description {
-    font-size: 14px;
-    text-align: center;
-    margin: 15px 0 25px;
-}
-
-.service__box-button {
-    font-size: 11px;
-    background-color: #ea5b58;
-    color: #ffffff;
-    border-radius: 3px;
-    border: none;
-
-    padding: 12px 32px;
-}
+.service__box-button {}
 
 /*------------------  SERVICES END  ------------------*/
