@@ -276,20 +276,11 @@ body {
 .work-hader {
     height: 420px;
     width: 100%;
-    background: center/cover url(../img/work-header.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: url(../img/work-header.jpg) cover;
 }
 
-.work-header__header {
-    font-size: 48px;
-}
+.work-header__header {}
 
-.work-header__description {
-    font-size: 24px;
-
-}
+.work-header__description {}
 
 /*------------------  WORK-HEADER END  ------------------*/

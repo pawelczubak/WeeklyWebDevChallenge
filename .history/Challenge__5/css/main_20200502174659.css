@@ -278,9 +278,8 @@ body {
     width: 100%;
     background: center/cover url(../img/work-header.jpg);
     display: flex;
-    flex-direction: column;
+
     align-items: center;
-    justify-content: center;
 }
 
 .work-header__header {
