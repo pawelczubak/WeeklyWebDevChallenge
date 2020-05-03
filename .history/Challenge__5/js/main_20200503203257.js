@@ -61,37 +61,20 @@ function closeImg() {
 function changeImg(changeDir) {
     document.querySelector("#current-img").remove();
 
-    let getImgWindow = document.querySelector(".img-window");
-    let newImg = document.createElement("img");
+    let getImgWindow = document.querySelector(.img - window);
+    let newImg = decument.createElement("img");
     getImgWindow.appendChild(newImg);
 
-    let calcNewImg;
+    let calcNewImage;
     if (changeDir === 1) {
         calcNewImg = getLatestOpenImg + 1;
-        if (calcNewImg > galleryImages.length) {
-            calcNewImg = 1;
+        if (calcNewImage > galleryImages.length) {
+            calcNewImage = 1;
         }
     } else if (changeDir === 0) {
-        calcNewImg = getLatestOpenImg - 1;
-        if (calcNewImg < 1) {
-            calcNewImg = galleryImages.length;
+        calcNewImg = getLatestOpenImg + 1;
+        if (calcNewImage < galleryImages.length) {
+            calcNewImage = galleryImages.length;
         }
     }
-
-    newImg.setAttribute("src", "img/project-" + calcNewImg + ".jpg");
-    newImg.setAttribute("id", "current-img");
-
-    getLatestOpenImg = calcNewImg;
-
-    newImg.onload = function () {
-        let imgWidth = this.width;
-        let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
-
-        let nextBtn = document.querySelector(".img-btn-next");
-        nextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
-
-        let prevBtn = document.querySelector(".img-btn-prev");
-        prevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
-    }
-
 }

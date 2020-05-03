@@ -428,39 +428,7 @@ body {
 
 }
 
-.img-btn-next {
-    display: block;
-    padding: 6px 10px;
-    border-radius: 4px;
-    background-color: #111111;
-    position: fixed;
-    top: 48vh;
-    z-index: 500;
-    color: #ffffff;
-    cursor: pointer;
-    text-transform: uppercase;
-}
 
-.img-btn-next:hover {
-    opacity: 0.8;
-}
-
-.img-btn-prev {
-    display: block;
-    padding: 6px 10px;
-    border-radius: 4px;
-    background-color: #111111;
-    position: fixed;
-    top: 48vh;
-    z-index: 500;
-    color: #ffffff;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.img-btn-prev:hover {
-    opacity: 0.8;
-}
 
 
 .portfolio__project-hover {
