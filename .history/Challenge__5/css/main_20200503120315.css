@@ -348,12 +348,12 @@ body {
 
 .portfolio__choice-box {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .portfolio__choice {
     font-size: 18px;
     color: #a7a7a7;
+
 }
 
 .portfolio__choice--active {
@@ -376,10 +376,6 @@ body {
     color: #ffffff;
 }
 
-.portfolio__project:hover .portfolio__project-hover {
-    opacity: 1;
-}
-
 .portfolio__project-img {
     position: absolute;
     object-fit: cover;
@@ -399,8 +395,6 @@ body {
 
     background: #506083;
     height: 100%;
-    opacity: 0;
-    transition: all 0.2s ease-in;
 }
 
 .portfolio__project-header {
@@ -415,28 +409,13 @@ body {
 }
 
 .portfolio__project-eye {
-    margin-top: 28px;
-    width: 39px;
-    height: 22px;
     background: url(../img/project-eye.png);
 }
 
-.portfolio__button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.portfolio__button {}
 
-.portfolio__button-header {
-    font-weight: bold;
-    font-size: 18px;
-}
+.portfolio__button-header {}
 
-.prtfolio__button-arrow {
-    margin-top: 10px;
-    height: 35px;
-    width: 50px;
-    background: url(../img/arrow.png);
-}
+.prtfolio__button-arrow {}
 
 /*------------------  PORTFOLIO END  ------------------*/

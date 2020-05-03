@@ -422,9 +422,7 @@ body {
 }
 
 .portfolio__button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .portfolio__button-header {
@@ -433,7 +431,7 @@ body {
 }
 
 .prtfolio__button-arrow {
-    margin-top: 10px;
+    display: block;
     height: 35px;
     width: 50px;
     background: url(../img/arrow.png);

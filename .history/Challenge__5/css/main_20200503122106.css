@@ -422,21 +422,11 @@ body {
 }
 
 .portfolio__button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
-.portfolio__button-header {
-    font-weight: bold;
-    font-size: 18px;
-}
+.portfolio__button-header {}
 
-.prtfolio__button-arrow {
-    margin-top: 10px;
-    height: 35px;
-    width: 50px;
-    background: url(../img/arrow.png);
-}
+.prtfolio__button-arrow {}
 
 /*------------------  PORTFOLIO END  ------------------*/
