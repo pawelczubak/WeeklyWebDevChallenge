@@ -102,3 +102,13 @@ function changeImg(changeDir) {
 
 
 // review slider
+
+new Glider(document.querySelector('.testimonial__box'), {
+    slidesToShow: 1,
+    dots: '#dots',
+    draggable: true,
+    arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+    }
+});

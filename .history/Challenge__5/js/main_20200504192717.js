@@ -102,3 +102,25 @@ function changeImg(changeDir) {
 
 
 // review slider
+
+
+class Slider {
+    duration = 0;
+    currentSlide = 0;
+    slides = document.getElementsByClassName("testimonial__box");
+    constructor() {
+        this.initSlide();
+    }
+
+    initSlide() {
+        var i;
+        for (i = 0; i < this.slides.length; i++) {
+            this.slides[i].style.display = "none";
+        }
+        this.currentSlide++;
+        if (this.slides.length >= 1) {
+            this.slides[this.currentSlide - 1].style.display = "block";
+        }
+        this.slides[this.currentSlide - 1].style.display = "block";
+        setTimeout(() => this.initSlide(), 3000);
+    }

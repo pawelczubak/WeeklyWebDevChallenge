@@ -11,9 +11,8 @@
 
 
     <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
-
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/glide.css">
 </head>
 
 <body>
@@ -184,8 +183,8 @@
             <h2 class="potrfolio__header">What Our Happy Costomer Say</h2>
             <p class="portfolio__desctiption">lorem ipsum dolor sit amet</p>
             <div class="decor__black"></div>
-            <div class="testimonial__slider">
-
+            <div class="testimonial__slider glider">
+                <button class="glider-prev">Prev</button>
                 <article class="testimonial__box">
                     <div class="testimonial__img">
                         <div class="testimonial__img-face face1"></div>
@@ -234,8 +233,8 @@
                         <p class="testimonial__review-name">Patricia Rodos</p>
                     </div>
                 </article>
-
-
+                <button class="glider-next">Next</button>
+                <i id="dots" class="glider-dots"></i>
             </div>
 
         </section>
@@ -244,11 +243,19 @@
     <!--  --------------  TESTIMONIAL END  ------------- -->
 
 
-
+    <script src="js/glide.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-
     <script>
-
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            draggable: true,
+            dots: '.dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
     </script>
 </body>
 

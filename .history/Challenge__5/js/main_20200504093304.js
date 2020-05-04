@@ -1,5 +1,3 @@
-// PORTFOLIO SLIDER START
-
 let galleryImages = document.querySelectorAll(".portfolio__project");
 let getLatestOpenImg;
 let windowWidth = window.innerWidth;
@@ -28,7 +26,7 @@ if (galleryImages) {
 
             newImg.onload = function () {
                 let imgWidth = this.width;
-                let calcImgToEdge = ((windowWidth - imgWidth) / 2);
+                let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 10;
 
                 let newNextBtn = document.createElement("a");
                 let btnNextText = document.createTextNode("Next");
@@ -36,7 +34,7 @@ if (galleryImages) {
                 container.appendChild(newNextBtn);
                 newNextBtn.setAttribute("class", "img-btn-next");
                 newNextBtn.setAttribute("onclick", "changeImg(1)");
-                newNextBtn.style.cssText = "right: " + (calcImgToEdge - 17) + "px;";
+                newNextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
 
 
                 let newPrevBtn = document.createElement("a");
@@ -87,18 +85,13 @@ function changeImg(changeDir) {
 
     newImg.onload = function () {
         let imgWidth = this.width;
-        let calcImgToEdge = ((windowWidth - imgWidth) / 2);
+        let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 10;
 
         let nextBtn = document.querySelector(".img-btn-next");
-        nextBtn.style.cssText = "right: " + (calcImgToEdge - 17) + "px;";
+        nextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
 
         let prevBtn = document.querySelector(".img-btn-prev");
         prevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
     }
 
 }
-
-// PORTFOLIO SLIDER END
-
-
-// review slider

@@ -532,28 +532,24 @@ body {
 .testimonial {
     margin: 0 15px;
     padding: 0 0 80px 0;
-    width: 1185px;
+    max-width: 1185px;
     color: #323232;
-
 }
 
 .testimonial__slider {
-    width: 100%;
+    position: relative;
 
 }
 
 .testimonial__box {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
-
+    width: 100%;
 }
 
 .testimonial__img {
     padding: 0 55px;
-
 }
 
 .testimonial__img-face {
@@ -583,14 +579,14 @@ body {
 
 
 .testimonial__content {
-    width: 60%;
+    padding-left: 70px;
 }
 
 .testimonial__review {
     position: relative;
     font-size: 16px;
     line-height: 28px;
-    margin-left: auto;
+    width: 700px;
 }
 
 .testimonial__review::after {
@@ -610,6 +606,10 @@ body {
     margin-top: 30px;
 }
 
-
+.carousel {
+    background: #F2A;
+    width: 100%;
+    /* fixed gallery width */
+}
 
 /*------------------  TESTIMONIAL END  ------------------*/

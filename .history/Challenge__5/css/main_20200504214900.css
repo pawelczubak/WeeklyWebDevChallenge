@@ -544,10 +544,10 @@ body {
 
 .testimonial__box {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
 
 }
 
@@ -582,15 +582,13 @@ body {
 }
 
 
-.testimonial__content {
-    width: 60%;
-}
+.testimonial__content {}
 
 .testimonial__review {
     position: relative;
     font-size: 16px;
     line-height: 28px;
-    margin-left: auto;
+    width: 700px;
 }
 
 .testimonial__review::after {
@@ -613,3 +611,9 @@ body {
 
 
 /*------------------  TESTIMONIAL END  ------------------*/
+
+@media screen and (min-width: 1076px) {
+    .testimonial__box {
+        flex-direction: column;
+    }
+}

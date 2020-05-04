@@ -102,3 +102,49 @@ function changeImg(changeDir) {
 
 
 // review slider
+
+
+class Slider {
+    duration = 0;
+    currentSlide = 0;
+    slides = document.getElementsByClassName("testimonial__box");
+    constructor() {
+        this.initSlide();
+    }
+
+    initSlide() {
+        var i;
+        for (i = 0; i < this.slides.length; i++) {
+            this.currentSlide[i].style.display = "none";
+        }
+        this.currentSlide++;
+        if (this.currentSlide > this.slides.length) {
+            this.currentSlide = 1
+        }
+        this.slides[this.currentSlide - 1].style.display = "block";
+        setTimeout(this.initSlide, 3000);
+    }
+
+
+
+
+
+
+
+
+    // let index = 0;
+    // show();
+
+    // function show() {
+    //     let i;
+    //     let slides = document.querySelectorAll(".testimonial__box");
+    //     for (i = 0; slides.length; i++) {
+    //         slides[i].style.cssText = "display: none;";
+    //     }
+    //     index = index + 1;
+    //     if (index > slides.length) {
+    //         index = 1;
+    //     }
+    //     slides[index - 1].style.display = " block";
+    //     setTimeout(show, 1500);
+    // }

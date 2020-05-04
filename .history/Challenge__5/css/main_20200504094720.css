@@ -407,8 +407,7 @@ body {
     opacity: 1;
 }
 
-/* ---- popup window when click START---- */
-
+/* ---- popup window when click ---- */
 .img-window {
     width: 100vw;
     height: 100vh;
@@ -431,9 +430,7 @@ body {
 
 .img-btn-next {
     display: block;
-    text-align: center;
     height: 25px;
-    line-height: 25px;
     width: 50px;
     border-radius: 4px;
     background-color: #111111;
@@ -451,10 +448,7 @@ body {
 
 .img-btn-prev {
     display: block;
-    text-align: center;
-    height: 25px;
-    line-height: 25px;
-    width: 50px;
+    padding: 6px 10px;
     border-radius: 4px;
     background-color: #111111;
     position: fixed;
@@ -469,7 +463,6 @@ body {
     opacity: 0.8;
 }
 
-/* ---- popup window when click END ---- */
 
 .portfolio__project-hover {
     position: relative;
@@ -521,95 +514,3 @@ body {
 }
 
 /*------------------  PORTFOLIO END  ------------------*/
-
-/*------------------  TESTIMONIAL START  ------------------*/
-
-.testimonial__bg {
-    display: flex;
-    justify-content: center;
-}
-
-.testimonial {
-    margin: 0 15px;
-    padding: 0 0 80px 0;
-    width: 1185px;
-    color: #323232;
-
-}
-
-.testimonial__slider {
-    width: 100%;
-
-}
-
-.testimonial__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
-.testimonial__img {
-    padding: 0 55px;
-
-}
-
-.testimonial__img-face {
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    border: 3px solid #ebebeb;
-    background-position: center;
-    background-size: cover;
-}
-
-.face1 {
-    background-image: url(../img/face1.jpg);
-}
-
-.face2 {
-    background-image: url(../img/face2.jpg);
-}
-
-.face3 {
-    background-image: url(../img/face3.jpg);
-}
-
-.face4 {
-    background-image: url(../img/face4.jpg);
-}
-
-
-.testimonial__content {
-    width: 60%;
-}
-
-.testimonial__review {
-    position: relative;
-    font-size: 16px;
-    line-height: 28px;
-    margin-left: auto;
-}
-
-.testimonial__review::after {
-    position: absolute;
-    content: '';
-    height: 15px;
-    width: 19px;
-    top: 7px;
-    left: -35px;
-    background-image: url(../img/apostrophe.png);
-    background-repeat: no-repeat;
-}
-
-.testimonial__review-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-
-
-/*------------------  TESTIMONIAL END  ------------------*/

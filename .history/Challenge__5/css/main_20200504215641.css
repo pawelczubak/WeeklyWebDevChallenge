@@ -544,16 +544,16 @@ body {
 
 .testimonial__box {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
 
 }
 
 .testimonial__img {
     padding: 0 55px;
-
+    width: 40%;
 }
 
 .testimonial__img-face {
@@ -590,7 +590,7 @@ body {
     position: relative;
     font-size: 16px;
     line-height: 28px;
-    margin-left: auto;
+    width: 700px;
 }
 
 .testimonial__review::after {

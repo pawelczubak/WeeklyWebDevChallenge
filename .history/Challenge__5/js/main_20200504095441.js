@@ -1,5 +1,3 @@
-// PORTFOLIO SLIDER START
-
 let galleryImages = document.querySelectorAll(".portfolio__project");
 let getLatestOpenImg;
 let windowWidth = window.innerWidth;
@@ -97,8 +95,3 @@ function changeImg(changeDir) {
     }
 
 }
-
-// PORTFOLIO SLIDER END
-
-
-// review slider

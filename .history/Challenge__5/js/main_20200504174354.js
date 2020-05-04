@@ -99,6 +99,3 @@ function changeImg(changeDir) {
 }
 
 // PORTFOLIO SLIDER END
-
-
-// review slider

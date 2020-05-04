@@ -9,11 +9,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
-
     <link rel="stylesheet" href="css/main.css">
-
 </head>
 
 <body>
@@ -185,7 +183,6 @@
             <p class="portfolio__desctiption">lorem ipsum dolor sit amet</p>
             <div class="decor__black"></div>
             <div class="testimonial__slider">
-
                 <article class="testimonial__box">
                     <div class="testimonial__img">
                         <div class="testimonial__img-face face1"></div>
@@ -234,8 +231,6 @@
                         <p class="testimonial__review-name">Patricia Rodos</p>
                     </div>
                 </article>
-
-
             </div>
 
         </section>
@@ -244,11 +239,15 @@
     <!--  --------------  TESTIMONIAL END  ------------- -->
 
 
-
+    <script src="js/glide.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-
     <script>
+        new Glider(document.querySelector('.testimonial__box'), {
+            slidesToShow: 1,
+            dots: '#dots',
+            draggable: true,
 
+        });
     </script>
 </body>
 

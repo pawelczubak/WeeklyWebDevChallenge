@@ -102,3 +102,21 @@ function changeImg(changeDir) {
 
 
 // review slider
+
+
+let index = 0;
+show();
+
+function show() {
+    let i;
+    let slides = document.getElementsByClassName("testimonial__box");
+    for (i = 0; slides.length; i++) {
+        slides[i].style.cssText = "display: none;";
+    }
+    index = index + 1;
+    if (index > slides.length) {
+        index = 1;
+    }
+    slides[index - 1].style.display = " block";
+    setTimeout(show, 1500);
+}

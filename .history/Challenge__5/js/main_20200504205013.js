@@ -102,3 +102,9 @@ function changeImg(changeDir) {
 
 
 // review slider
+
+$('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+});
