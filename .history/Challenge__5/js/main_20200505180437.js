@@ -55,7 +55,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: uluru,
         map: map,
-        icon: 'https://img.icons8.com/ios-filled/50/000000/marker.png'
+        icon: iconBase + 'parking_lot_maps.png'
     });
 }
 // review slider
