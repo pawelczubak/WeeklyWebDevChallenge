@@ -52,14 +52,9 @@ function initMap() {
             center: uluru
         });
     // The marker, positioned at Uluru
-    var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-    var beachMarker = new google.maps.Marker({
-        position: {
-            lat: -33.890,
-            lng: 151.274
-        },
-        map: map,
-        icon: image
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
     });
 }
 // review slider

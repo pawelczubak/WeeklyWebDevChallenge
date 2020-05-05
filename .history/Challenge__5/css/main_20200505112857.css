@@ -544,7 +544,7 @@ body {
 
 .testimonial__box {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-between;
     align-items: center;
 
@@ -584,13 +584,14 @@ body {
 
 .testimonial__content {
     width: 60%;
+    margin: 40px 30px 0 0;
 }
 
 .testimonial__review {
     position: relative;
     font-size: 16px;
     line-height: 28px;
-    margin-left: auto;
+
 }
 
 .testimonial__review::after {
@@ -613,22 +614,3 @@ body {
 
 
 /*------------------  TESTIMONIAL END  ------------------*/
-
-/*------------------  CONTACT-HEADER START   ------------------*/
-
-.contact-header {
-    background: center/cover url(../img/contact-header.jpg);
-}
-
-/*------------------  CONTACT-HEADER END   ------------------*/
-
-/*------------------  MAP START   ------------------*/
-
-#map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-}
-
-/*------------------  MAP END   ------------------*/

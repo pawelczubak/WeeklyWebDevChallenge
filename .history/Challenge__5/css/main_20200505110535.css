@@ -552,7 +552,7 @@ body {
 }
 
 .testimonial__img {
-    padding: 0 55px;
+    margin: 0 55px;
 
 }
 
@@ -613,22 +613,3 @@ body {
 
 
 /*------------------  TESTIMONIAL END  ------------------*/
-
-/*------------------  CONTACT-HEADER START   ------------------*/
-
-.contact-header {
-    background: center/cover url(../img/contact-header.jpg);
-}
-
-/*------------------  CONTACT-HEADER END   ------------------*/
-
-/*------------------  MAP START   ------------------*/
-
-#map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-}
-
-/*------------------  MAP END   ------------------*/

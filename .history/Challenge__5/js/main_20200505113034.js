@@ -36,30 +36,7 @@ function closeImg() {
 
 
 
-// GOOGLE MAPS
-// Initialize and add the map
-function initMap() {
-    // The location of Uluru
-    var uluru = {
-        lat: 50.208415,
-        lng: -5.490893
+// PORTFOLIO GALLERY END
 
-    };
-    // The map, centered at Uluru
-    var map = new google.maps.Map(
-        document.getElementById('map'), {
-            zoom: 14,
-            center: uluru
-        });
-    // The marker, positioned at Uluru
-    var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-    var beachMarker = new google.maps.Marker({
-        position: {
-            lat: -33.890,
-            lng: 151.274
-        },
-        map: map,
-        icon: image
-    });
-}
+
 // review slider
