@@ -650,7 +650,6 @@ body {
 
 .contact__content-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -690,8 +689,7 @@ body {
 
 .contact__social-list {
     display: flex;
-    list-style-type: none;
-    margin-top: 45px;
+
 }
 
 .contact__social-item {
@@ -699,7 +697,9 @@ body {
     height: 34px;
     border-radius: 50%;
     background-color: #c0c0c0;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     margin-right: 19px;
 }
@@ -709,16 +709,15 @@ body {
     background-color: #ffffff;
 }
 
-.contact__svg {}
+.contact__svg {
+    margin-top: 10px;
+}
 
 
 
 .contact__social_link {
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact__form {

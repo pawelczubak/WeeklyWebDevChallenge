@@ -650,7 +650,6 @@ body {
 
 .contact__content-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -688,38 +687,29 @@ body {
 }
 
 
-.contact__social-list {
-    display: flex;
-    list-style-type: none;
-    margin-top: 45px;
-}
+.contact__social-list {}
 
 .contact__social-item {
     width: 34px;
     height: 34px;
     border-radius: 50%;
     background-color: #c0c0c0;
-
-
-    margin-right: 19px;
-}
-
-
-.contact__social-item:hover {
-    background-color: #ffffff;
-}
-
-.contact__svg {}
-
-
-
-.contact__social_link {
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+.contact__svg-facebook {
+
+    margin-top: 10px;
+}
+
+.contact__svg-google {
+    margin-top: 10px;
+}
+
+.contact__social_link {}
 
 .contact__form {
     width: 570px;

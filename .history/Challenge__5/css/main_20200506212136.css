@@ -650,7 +650,6 @@ body {
 
 .contact__content-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -664,62 +663,23 @@ body {
     margin-top: 15px;
 }
 
-.contact__png {
+.contact__png-location {
     display: inline-block;
-    width: 18px;
-    height: 16px;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    margin-right: 10px;
-}
-
-.contact__png--location {
     background-image: url(../img/location.png);
+    width: 18px;
+    height: 12px;
 }
 
-.contact__png--phone {
-    background-image: url(../img/phone.png);
+.contact__png-phone {}
 
-}
-
-.contact__png--mail {
-    background-image: url(../img/mail.png);
-
-}
+.contact__png-mail {}
 
 
-.contact__social-list {
-    display: flex;
-    list-style-type: none;
-    margin-top: 45px;
-}
+.contact__social-list {}
 
-.contact__social-item {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background-color: #c0c0c0;
+.contact__social-item {}
 
-
-    margin-right: 19px;
-}
-
-
-.contact__social-item:hover {
-    background-color: #ffffff;
-}
-
-.contact__svg {}
-
-
-
-.contact__social_link {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.contact__social_link {}
 
 .contact__form {
     width: 570px;
