@@ -783,13 +783,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0;
 }
 
 .footer__copyright {}
 
-.footer__logo {
-    margin-top: 25px;
-}
+.footer__logo {}
 
 /*------------------  FOOTER END   ------------------*/

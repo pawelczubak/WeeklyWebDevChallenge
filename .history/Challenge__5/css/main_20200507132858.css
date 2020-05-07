@@ -776,20 +776,7 @@ body {
 /*------------------  CONTACT END   ------------------*/
 
 /*------------------  FOOTER START   ------------------*/
-.footer {
-    background-color: #161828;
-    color: #76777f;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-}
 
-.footer__copyright {}
 
-.footer__logo {
-    margin-top: 25px;
-}
 
 /*------------------  FOOTER END   ------------------*/
