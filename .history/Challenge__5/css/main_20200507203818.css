@@ -186,7 +186,7 @@ body {
 
 .slider__button {
     font-size: 18px;
-    padding: 20px 45px;
+    padding: 20px 47px;
     color: #ffffff;
     background-color: #ea5b58;
     border: none;
@@ -804,38 +804,17 @@ body {
         justify-content: center;
     }
 
-    .slider__header {
-
-        font-size: 30px;
-    }
-
-    .slider__description {
-        font-size: 17px;
-
-    }
-
-    .slider__button {
-        font-size: 15px;
-        padding: 18px 40px;
-
-    }
-
     .slider__img {
         position: absolute;
         bottom: -50px;
         left: -50px;
-        opacity: .4;
+        opacity: .3;
     }
 
     .slider__box {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .testimonial__content {
-        width: 80%;
-        margin: 30px auto 0;
     }
 
     .contact__form {
@@ -846,16 +825,7 @@ body {
 
     .contact__form-name,
     .contact__form-emaill {
-        width: 48.6%;
-    }
-
-    .contact__social-list {
-        margin: 30px 0;
-    }
-
-    .contact__address-box {
-        width: 95%;
-        margin: 0 auto;
+        width: 49%;
     }
 }
 

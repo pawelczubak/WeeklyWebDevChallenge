@@ -806,17 +806,17 @@ body {
 
     .slider__header {
 
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .slider__description {
-        font-size: 17px;
+        font-size: 21px;
 
     }
 
     .slider__button {
-        font-size: 15px;
-        padding: 18px 40px;
+        font-size: 18px;
+        padding: 20px 45px;
 
     }
 
@@ -824,7 +824,7 @@ body {
         position: absolute;
         bottom: -50px;
         left: -50px;
-        opacity: .4;
+        opacity: .3;
     }
 
     .slider__box {
@@ -835,12 +835,12 @@ body {
 
     .testimonial__content {
         width: 80%;
-        margin: 30px auto 0;
+        margin: 0 auto;
     }
 
     .contact__form {
         width: 95%;
-        margin: 0 auto;
+        margin: 20px auto 0;
 
     }
 
