@@ -68,22 +68,7 @@ const navSlide = () => {
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav__list--active');
-
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = ''
-            } else {
-                link.style.animation = `navListFade 0.5s ease forwards ${index / 7}s`;
-            }
-
-        });
-
-        // burgrt animate
-        burger.classList.toggle('toggle');
     });
-
-
-
 }
 
 navSlide();

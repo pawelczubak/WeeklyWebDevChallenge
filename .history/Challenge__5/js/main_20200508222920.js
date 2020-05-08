@@ -82,7 +82,9 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 
-
+    navLinks.addEventListener('click', () => {
+        nav.classList.toggle('nav__list--active');
+    });
 
 }
 

@@ -77,12 +77,7 @@ const navSlide = () => {
             }
 
         });
-
-        // burgrt animate
-        burger.classList.toggle('toggle');
     });
-
-
 
 }
 

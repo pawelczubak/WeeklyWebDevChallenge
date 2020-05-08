@@ -62,28 +62,38 @@ function initMap() {
 
 
 const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav__list');
-    const navLinks = document.querySelectorAll('.nav__link')
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav__list');
+        const navLinks = document.querySelectorAll('.nav__link')
 
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav__list--active');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav__list--active');
 
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = ''
-            } else {
-                link.style.animation = `navListFade 0.5s ease forwards ${index / 7}s`;
-            }
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = ''
+                } else {
+                    link.style.animation = `navListFade 0.5s ease forwards ${index / 7}s`;
+                }
 
+            });
+
+            // burgrt animate
+            burger.classList.toggle('toggle');
         });
 
-        // burgrt animate
-        burger.classList.toggle('toggle');
-    });
 
+        navLinks.forEach((index) => {
+                index.addEventListener('click', () => {
+                    nav.classList.toggle('nav__list--active');
+                });
 
+            }
 
-}
+            navLinks.addEventListener('click', () => {
+                nav.classList.toggle('nav__list--active');
+            });
 
-navSlide();
+        }
+
+        navSlide();
