@@ -331,17 +331,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 15px;
 }
 
 .work-header__header {
     font-size: 48px;
-    text-align: center;
 }
 
 .work-header__description {
     font-size: 24px;
-    text-align: center;
 
 }
 
@@ -849,7 +846,7 @@ body {
     }
 
     .slider__header {
-        text-align: center;
+
         font-size: 30px;
     }
 
@@ -904,14 +901,6 @@ body {
 }
 
 @media screen and (max-width:800px) {
-    .decor__white {
-        width: 200px;
-    }
-
-    .decor__black {
-        width: 200px;
-    }
-
     .nav__container {
         margin: 0;
 
@@ -953,19 +942,6 @@ body {
     .burger {
         display: block;
     }
-
-    .work-header__header {
-        font-size: 40px;
-    }
-
-    .work-header__description {
-        font-size: 18px;
-    }
-
-    .testimonial__img-face {
-        width: 150px;
-        height: 150px;
-    }
 }
 
 .nav__list--active {
@@ -998,8 +974,6 @@ body {
 
 
 }
-
-
 
 /*------------------  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   ------------------*/
 /*------------------  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   ------------------*/
