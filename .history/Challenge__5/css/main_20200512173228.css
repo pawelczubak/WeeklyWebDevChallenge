@@ -644,7 +644,6 @@ body {
 
 .contact-header {
     background: center/cover url(../img/contact-header.jpg);
-    background-attachment: fixed;
 }
 
 /*------------------  CONTACT-HEADER END   ------------------*/

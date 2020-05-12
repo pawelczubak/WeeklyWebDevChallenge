@@ -176,6 +176,8 @@ body {
     position: absolute;
     content: "";
     background-image: url(../img/bg_img_slider.png);
+    background-size: cover;
+    background-attachment: fixed;
     top: 40px;
     left: 5px;
     width: 77%;
@@ -327,7 +329,6 @@ body {
     height: 420px;
     width: 100%;
     background: center/cover url(../img/work-header.jpg);
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -644,7 +645,6 @@ body {
 
 .contact-header {
     background: center/cover url(../img/contact-header.jpg);
-    background-attachment: fixed;
 }
 
 /*------------------  CONTACT-HEADER END   ------------------*/
