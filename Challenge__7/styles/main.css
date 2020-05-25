@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/b7a29c039fb2e83c4ed29dc264ecd906?family=MrsEaves);
+@import url(//db.onlinewebfonts.com/c/3fdb879e1f60a0c91e9b4bee114a0928?family=Segoe+WP+Light);
+@import url(//db.onlinewebfonts.com/c/4735dd9ca25670c44600021e7428b8d3?family=Segoe);
 body {
   background: #56555c;
 }
@@ -38,18 +41,12 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: "mrseavesitalicitalic";
-  src: url("../../../assets/mrseavesitalic_italic-webfont.woff2") format("woff2"), url("../../assets/mrseavesitalic_italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 .logo {
   background: #7baff0;
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  margin: 35px auto;
+  margin: 25px auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -62,10 +59,32 @@ table {
   margin-top: 40px;
 }
 .logo__brand-name {
-  font-family: "mrseavesitalicitalic";
+  font-family: "MrsEaves";
   color: #fff;
-  font-size: 37px;
-  margin-top: 20px;
+  font-size: 46px;
+  margin-top: 10px;
+}
+
+.header {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.header__heading {
+  font-family: "Segoe WP Light";
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.header__description {
+  font-family: "Segoe";
+  font-size: 16px;
+  line-height: 23px;
+  color: #fff;
+  width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  hyphens: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
