@@ -92,19 +92,124 @@ table {
   max-width: 100%;
 }
 .timeline__container {
+  position: relative;
   display: flex;
   justify-content: center;
+}
+.timeline__container .line {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 3px);
+  height: 100%;
+  width: 6px;
+  background: #fff;
 }
 .timeline__container .left {
   margin-right: 40px;
 }
+.timeline__container .left .item:before, .timeline__container .left .item-small:before {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: -48.5px;
+  height: 11px;
+  width: 11px;
+  background: #fff;
+  border-radius: 50%;
+  border: 3px solid #56555c;
+}
+.timeline__container .left .item:after, .timeline__container .left .item-small:after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: -14px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+}
 .timeline__container .right {
   margin-left: 40px;
 }
+.timeline__container .right .item:before, .timeline__container .right .item-small:before {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: -48.5px;
+  height: 11px;
+  width: 11px;
+  background: #fff;
+  border-radius: 50%;
+  border: 3px solid #56555c;
+}
+.timeline__container .right .item:after, .timeline__container .right .item-small:after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: -14px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid #fff;
+}
+.timeline__view-1 {
+  padding-top: 35px;
+  margin-top: 55px;
+}
+.timeline__view-1 .left .item:first-child {
+  margin-top: 90px;
+}
+.timeline__view-1::before {
+  position: absolute;
+  content: "";
+  top: -25px;
+  left: calc(50% - 13px);
+  height: 16px;
+  width: 16px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.timeline__view-3::before {
+  position: absolute;
+  content: "";
+  bottom: -25px;
+  left: calc(50% - 13px);
+  height: 16px;
+  width: 16px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.item-small {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+.item-small__heading {
+  font-family: "Segoe WP Light";
+  font-size: 20px;
+  line-height: 58px;
+  color: #4e4e4e s;
+  margin-left: 32px;
+}
+.item-small__button {
+  width: 33px;
+  height: 33px;
+  margin-right: 20px;
+}
+
 .item {
+  position: relative;
   background: #fff;
   padding: 0 17px;
   border-radius: 4px;
+  margin-bottom: 100px;
 }
 .item__heading {
   font-family: "Segoe WP Light";

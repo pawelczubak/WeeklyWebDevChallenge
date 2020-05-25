@@ -1,11 +1,81 @@
 .timeline
     max-width: 100%
     &__container
+        position: relative
         display: flex
         justify-content: center
+        .line
+            position: absolute
+            top: 0
+            left: calc(50% - 3px)
+            height: 100%
+            width: 6px
+            background: #fff
         .left
             margin-right: 40px
+            .item:before, .item-small:before
+                position: absolute
+                content: ''
+                top: 20px
+                right: -48.5px
+                height: 11px
+                width: 11px
+                background: #fff
+                border-radius: 50%
+                border: 3px solid #56555c
+            .item:after, .item-small:after
+                position: absolute
+                content: ''
+                top: 20px
+                right: -14px
+                width: 0
+                height: 0
+                border-top: 10px solid transparent
+                border-bottom: 10px solid transparent
+                border-left: 15px solid #fff
         .right
             margin-left: 40px
+            .item:before, .item-small:before
+                position: absolute
+                content: ''
+                top: 20px
+                left: -48.5px
+                height: 11px
+                width: 11px
+                background: #fff
+                border-radius: 50%
+                border: 3px solid #56555c
+            .item:after, .item-small:after
+                position: absolute
+                content: ''
+                top: 20px
+                left: -14px
+                width: 0
+                height: 0
+                border-top: 10px solid transparent
+                border-bottom: 10px solid transparent
+                border-right: 15px solid #fff
     &__view-1
-   
+        padding-top: 35px
+        margin-top: 55px
+        .left
+            .item:first-child
+                margin-top: 90px
+    &__view-1::before
+        position: absolute
+        content: ''
+        top: -25px
+        left: calc(50% - 13px)
+        height: 16px
+        width: 16px
+        border: 5px solid #fff
+        border-radius: 50%
+    &__view-3::before
+        position: absolute
+        content: ''
+        bottom: -25px
+        left: calc(50% - 13px)
+        height: 16px
+        width: 16px
+        border: 5px solid #fff
+        border-radius: 50%
