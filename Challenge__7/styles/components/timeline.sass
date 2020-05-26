@@ -33,6 +33,7 @@
                 border-top: 10px solid transparent
                 border-bottom: 10px solid transparent
                 border-left: 15px solid #fff
+
         .right
             margin-left: 40px
             .item:before, .item-small:before
@@ -55,6 +56,7 @@
                 border-top: 10px solid transparent
                 border-bottom: 10px solid transparent
                 border-right: 15px solid #fff
+
     &__view-1
         padding-top: 35px
         margin-top: 55px
@@ -70,6 +72,18 @@
         width: 16px
         border: 5px solid #fff
         border-radius: 50%
+    &__view-2
+        position: absolute
+        height: 0
+        width: 0
+        visibility: hidden
+
+    &__view-3
+        position: absolute
+        height: 0
+        width: 0
+        visibility: hidden
+
     &__view-3::before
         position: absolute
         content: ''
@@ -79,3 +93,30 @@
         width: 16px
         border: 5px solid #fff
         border-radius: 50%
+    .visable
+        position: relative
+        height: auto
+        width: auto
+        visibility: visible
+
+.loader
+    display: flex
+    justify-content: start
+    align-items: center
+    text-align: center
+    margin: 10px auto 0
+    height: 30px
+    width: 150px
+    background: #fff
+    border-radius: 4px
+    p
+        color: #4e4e4e
+        font-family: 'Segoe WP Light'
+        margin-left: 12px
+        letter-spacing: 1px
+    img
+        height: 20px
+        margin-left: 12px
+
+.hidden
+    visibility: hidden

@@ -171,6 +171,18 @@ table {
   border: 5px solid #fff;
   border-radius: 50%;
 }
+.timeline__view-2 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.timeline__view-3 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
 .timeline__view-3::before {
   position: absolute;
   content: "";
@@ -181,6 +193,38 @@ table {
   border: 5px solid #fff;
   border-radius: 50%;
 }
+.timeline .visable {
+  position: relative;
+  height: auto;
+  width: auto;
+  visibility: visible;
+}
+
+.loader {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  margin: 10px auto 0;
+  height: 30px;
+  width: 150px;
+  background: #fff;
+  border-radius: 4px;
+}
+.loader p {
+  color: #4e4e4e;
+  font-family: "Segoe WP Light";
+  margin-left: 12px;
+  letter-spacing: 1px;
+}
+.loader img {
+  height: 20px;
+  margin-left: 12px;
+}
+
+.hidden {
+  visibility: hidden;
+}
 
 .item-small {
   position: relative;
@@ -190,6 +234,9 @@ table {
   background: #fff;
   border-radius: 4px;
   margin-bottom: 32px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .item-small__heading {
   font-family: "Segoe WP Light";
@@ -210,6 +257,9 @@ table {
   padding: 0 17px;
   border-radius: 4px;
   margin-bottom: 100px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .item__heading {
   font-family: "Segoe WP Light";
@@ -278,6 +328,14 @@ table {
   justify-content: center;
   align-items: center;
   padding-bottom: 2px;
+}
+
+.footer__content {
+  font-family: "Segoe";
+  text-align: center;
+  font-size: 16px;
+  padding: 100px 0 50px 0;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
