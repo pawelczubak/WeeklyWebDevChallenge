@@ -1,79 +1,43 @@
-(function () {
-    function debounce(fn, ms) { // https://remysharp.com/2010/07/21/throttling-function-calls
-        var time = null;
-        return function () {
-            var a = arguments,
-                t = this;
-            clearTimeout(time);
-            time = setTimeout(function () {
-                fn.apply(t, a);
-            }, ms);
-        }
+let header = document.getElementById("header")
+let view1 = document.getElementById("view1");
+let view2 = document.getElementById("view2");
+let view3 = document.getElementById("view3");
+let loader = document.getElementById("loader");
+let footer = document.getElementById("footer");
+
+
+let headerHeight = header.offsetHeight;
+let view1Height = view1.offsetHeight;
+let view2Height = view2.offsetHeight;
+let footerHeight = footer.offsetHeight;
+
+
+
+view2.style.display = 'none';
+view3.style.display = 'none';
+
+
+
+window.addEventListener('scroll', function () {
+
+    let scrollBottomHeight = window.scrollY + window.screen.height;
+
+
+    // console.log("window scroll:" + window.scrollY);
+    // console.log("scroll height:" + scrollBottomHeight);
+    // console.log("header height:" + headerHeight);
+    // console.log("view1 height:" + view1Height);
+    // console.log("view2 haight:" + view2Height);
+
+
+    if (scrollBottomHeight > view1Height + headerHeight + footerHeight) {
+        view2.style.display = 'flex';
+
     }
 
-    function throttle(fn, ms) { // Ryan Taylor comment - https://remysharp.com/2010/07/21/throttling-function-calls
-        var time, last = 0;
-        return function () {
-            var a = arguments,
-                t = this,
-                now = +(new Date),
-                exe = function () {
-                    last = now;
-                    fn.apply(t, a);
-                };
-            clearTimeout(time);
-            (now >= last + ms) ? exe(): time = setTimeout(exe, ms);
-        }
+    if (scrollBottomHeight > view1Height + headerHeight + view2Height + footerHeight) {
+        view3.style.display = 'flex';
+        loader.style.display = 'none';
     }
 
-    function hasClass(el, cls) {
-        if (el.className.match('(?:^|\\s)' + cls + '(?!\\S)')) {
-            return true;
-        }
-    }
-
-    function addClass(el, cls) {
-        if (!el.className.match('(?:^|\\s)' + cls + '(?!\\S)')) {
-            el.className += ' ' + cls;
-        }
-    }
-
-    function delClass(el, cls) {
-        el.className = el.className.replace(new RegExp('(?:^|\\s)' + cls + '(?!\\S)'), '');
-    }
-
-    document.documentElement.className += ' js'; // adds class="js" to <html> element
-
-    function elementFromTop(elem, classToAdd, distanceFromTop, unit) {
-        var winY = window.innerHeight || document.documentElement.clientHeight,
-            elemLength = elem.length,
-            distTop, distPercent, distPixels, distUnit, i;
-        for (i = 0; i < elemLength; ++i) {
-            distTop = elem[i].getBoundingClientRect().top;
-            distPercent = Math.round((distTop / winY) * 100);
-            distPixels = Math.round(distTop);
-            distUnit = unit == 'percent' ? distPercent : distPixels;
-            if (distUnit <= distanceFromTop) {
-                if (!hasClass(elem[i], classToAdd)) {
-                    addClass(elem[i], classToAdd);
-                }
-            } else {
-                delClass(elem[i], classToAdd);
-            }
-        }
-    }
-    // params: element, classes to add, distance from top, unit ('percent' or 'pixels')
-
-    window.addEventListener('scroll', throttle(function () {
-        elementFromTop(document.querySelectorAll('.timeline__view-2'), 'visable', 80, 'percent'); // as top of element hits top of viewport
-        elementFromTop(document.querySelectorAll('.timeline__view-3'), 'visable', 80, 'percent');
-        elementFromTop(document.querySelectorAll('.loade'), 'hidden', 90, 'percent');
-    }, 100), false);
-
-    window.addEventListener('resize', debounce(function () {
-        elementFromTop(document.querySelectorAll('.timeline__view-2'), 'visable', 80, 'percent'); // as top of element hits top of viewport
-        elementFromTop(document.querySelectorAll('.timeline__view-3'), 'visable', 80, 'percent');
-        elementFromTop(document.querySelectorAll('.loader'), 'hidden', 90, 'percent');
-
-    }, 100), false);
-})();
+});

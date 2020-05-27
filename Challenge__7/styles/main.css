@@ -171,18 +171,6 @@ table {
   border: 5px solid #fff;
   border-radius: 50%;
 }
-.timeline__view-2 {
-  position: absolute;
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
-.timeline__view-3 {
-  position: absolute;
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
 .timeline__view-3::before {
   position: absolute;
   content: "";
