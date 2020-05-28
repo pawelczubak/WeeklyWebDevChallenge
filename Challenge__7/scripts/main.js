@@ -6,22 +6,19 @@ let loader = document.getElementById("loader");
 let footer = document.getElementById("footer");
 
 
-let headerHeight = header.offsetHeight;
-let view1Height = view1.offsetHeight;
+let headerHeight = header.offsetHeight + 25;
+let view1Height = view1.offsetHeight + 55;
 let view2Height = view2.offsetHeight;
+let view3Height = view3.offsetHeight;
 let footerHeight = footer.offsetHeight;
-
 
 
 view2.style.display = 'none';
 view3.style.display = 'none';
 
-
-
 window.addEventListener('scroll', function () {
 
-    let scrollBottomHeight = window.scrollY + window.screen.height;
-
+    let scrollBottomHeight = window.scrollY + window.innerHeight;
 
     // console.log("window scroll:" + window.scrollY);
     // console.log("scroll height:" + scrollBottomHeight);
@@ -29,10 +26,9 @@ window.addEventListener('scroll', function () {
     // console.log("view1 height:" + view1Height);
     // console.log("view2 haight:" + view2Height);
 
-
+    // infinite scroll
     if (scrollBottomHeight > view1Height + headerHeight + footerHeight) {
         view2.style.display = 'flex';
-
     }
 
     if (scrollBottomHeight > view1Height + headerHeight + view2Height + footerHeight) {
@@ -40,4 +36,6 @@ window.addEventListener('scroll', function () {
         loader.style.display = 'none';
     }
 
+    //background position
+    console.log("website haight:" + (view2Height + headerHeight + view1Height + footerHeight + view3Height));
 });
