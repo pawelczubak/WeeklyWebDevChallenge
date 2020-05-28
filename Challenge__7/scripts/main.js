@@ -27,6 +27,7 @@ window.addEventListener('scroll', function () {
     // console.log("view2 haight:" + view2Height);
 
     // infinite scroll
+
     if (scrollBottomHeight > view1Height + headerHeight + footerHeight) {
         view2.style.display = 'flex';
     }
@@ -38,7 +39,10 @@ window.addEventListener('scroll', function () {
 
 
 });
+
 //background position
+
+
 window.addEventListener('scroll', function () {
     let bgBottom = document.getElementById("bgBottom");
     let bgMiddle = document.getElementById("bgMiddle");
