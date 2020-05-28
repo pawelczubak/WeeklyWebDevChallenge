@@ -36,6 +36,18 @@ window.addEventListener('scroll', function () {
         loader.style.display = 'none';
     }
 
-    //background position
-    console.log("website haight:" + (view2Height + headerHeight + view1Height + footerHeight + view3Height));
+
+});
+//background position
+window.addEventListener('scroll', function () {
+    let bgBottom = document.getElementById("bgBottom");
+    let bgMiddle = document.getElementById("bgMiddle");
+    let bottomValue = document.body.clientHeight - bgBottom.offsetHeight + 25;
+    let middleValue = document.body.clientHeight / 2;
+
+    bgMiddle.style.top = middleValue + "px";
+    bgBottom.style.top = bottomValue + "px";
+
+
+    // console.log("website haight:" + bottomValue);
 });
