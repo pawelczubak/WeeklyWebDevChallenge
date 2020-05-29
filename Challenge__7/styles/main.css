@@ -1,93 +1,13 @@
-@import url(//db.onlinewebfonts.com/c/b7a29c039fb2e83c4ed29dc264ecd906?family=MrsEaves);
-@import url(//db.onlinewebfonts.com/c/3fdb879e1f60a0c91e9b4bee114a0928?family=Segoe+WP+Light);
-@import url(//db.onlinewebfonts.com/c/4735dd9ca25670c44600021e7428b8d3?family=Segoe);
-@import url(//db.onlinewebfonts.com/c/6c05048f4d8be0d5770f1d2ac6535624?family=Museo+Slab);
-
+@import url("https://db.onlinewebfonts.com/c/b7a29c039fb2e83c4ed29dc264ecd906?family=MrsEaves");
+@import url("https:////db.onlinewebfonts.com/c/3fdb879e1f60a0c91e9b4bee114a0928?family=Segoe+WP+Light");
+@import url("https:////db.onlinewebfonts.com/c/4735dd9ca25670c44600021e7428b8d3?family=Segoe");
+@import url("https:////db.onlinewebfonts.com/c/6c05048f4d8be0d5770f1d2ac6535624?family=Museo+Slab");
 body {
   background: #56555c;
+  overflow-x: hidden;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -97,17 +17,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -115,20 +25,15 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
@@ -178,16 +83,14 @@ table {
   justify-content: flex-start;
   align-items: center;
 }
-
 .logo__png {
   height: 76px;
   width: 107px;
   background-image: url("../assets/logo.png");
   margin-top: 40px;
 }
-
 .logo__brand-name {
-  font-family: "MrsEaves";
+  font-family: "MrsEaves", Arial, sans-serif;
   color: #fff;
   font-size: 46px;
   margin-top: 10px;
@@ -197,38 +100,32 @@ table {
   max-width: 100%;
   margin: 0 auto;
 }
-
 .header__heading {
-  font-family: "Segoe WP Light";
+  font-family: "Segoe WP Light", Arial, sans-serif;
   font-size: 50px;
   text-align: center;
   color: #fff;
   margin-bottom: 40px;
 }
-
 .header__description {
-  font-family: "Segoe";
+  font-family: "Segoe", Arial, sans-serif;
   font-size: 16px;
   line-height: 23px;
   color: #fff;
   width: 800px;
   margin: 0 auto;
   text-align: justify;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
   hyphens: auto;
 }
 
 .timeline {
   max-width: 100%;
 }
-
 .timeline__container {
   position: relative;
   display: flex;
   justify-content: center;
 }
-
 .timeline__container .line {
   position: absolute;
   top: 0;
@@ -237,13 +134,10 @@ table {
   width: 6px;
   background: #fff;
 }
-
 .timeline__container .left {
   margin-right: 40px;
 }
-
-.timeline__container .left .item:before,
-.timeline__container .left .item-small:before {
+.timeline__container .left .item:before, .timeline__container .left .item-small:before {
   position: absolute;
   content: "";
   top: 20px;
@@ -254,9 +148,7 @@ table {
   border-radius: 50%;
   border: 3px solid #56555c;
 }
-
-.timeline__container .left .item:after,
-.timeline__container .left .item-small:after {
+.timeline__container .left .item:after, .timeline__container .left .item-small:after {
   position: absolute;
   content: "";
   top: 20px;
@@ -267,13 +159,10 @@ table {
   border-bottom: 10px solid transparent;
   border-left: 15px solid #fff;
 }
-
 .timeline__container .right {
   margin-left: 40px;
 }
-
-.timeline__container .right .item:before,
-.timeline__container .right .item-small:before {
+.timeline__container .right .item:before, .timeline__container .right .item-small:before {
   position: absolute;
   content: "";
   top: 20px;
@@ -284,9 +173,7 @@ table {
   border-radius: 50%;
   border: 3px solid #56555c;
 }
-
-.timeline__container .right .item:after,
-.timeline__container .right .item-small:after {
+.timeline__container .right .item:after, .timeline__container .right .item-small:after {
   position: absolute;
   content: "";
   top: 20px;
@@ -297,16 +184,13 @@ table {
   border-bottom: 10px solid transparent;
   border-right: 15px solid #fff;
 }
-
 .timeline__view-1 {
   padding-top: 35px;
   margin-top: 55px;
 }
-
 .timeline__view-1 .left .item:first-child {
   margin-top: 90px;
 }
-
 .timeline__view-1::before {
   position: absolute;
   content: "";
@@ -317,7 +201,6 @@ table {
   border: 5px solid #fff;
   border-radius: 50%;
 }
-
 .timeline__view-3::before {
   position: absolute;
   content: "";
@@ -328,7 +211,6 @@ table {
   border: 5px solid #fff;
   border-radius: 50%;
 }
-
 .timeline .visable {
   position: relative;
   height: auto;
@@ -347,14 +229,12 @@ table {
   background: #fff;
   border-radius: 4px;
 }
-
 .loader p {
   color: #4e4e4e;
-  font-family: "Segoe WP Light";
+  font-family: "Segoe WP Light", Arial, sans-serif;
   margin-left: 12px;
   letter-spacing: 1px;
 }
-
 .loader img {
   height: 20px;
   margin-left: 12px;
@@ -372,17 +252,17 @@ table {
   background: #fff;
   border-radius: 4px;
   margin-bottom: 32px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 .item-small__heading {
   font-family: "Segoe WP Light";
   font-size: 20px;
   line-height: 58px;
-  color: #4e4e4e s;
+  color: #4e4e4e;
   margin-left: 32px;
 }
-
 .item-small__button {
   width: 33px;
   height: 33px;
@@ -395,66 +275,58 @@ table {
   padding: 0 17px;
   border-radius: 4px;
   margin-bottom: 100px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 .item__heading {
-  font-family: "Segoe WP Light";
+  font-family: "Segoe WP Light", Arial, sans-serif;
   font-size: 20px;
   line-height: 58px;
   color: #4e4e4e;
 }
-
 .item__content {
   width: 100%;
 }
-
 .item__content .photo {
   position: relative;
   width: 400px;
   height: 260px;
 }
-
 .item__content .photo__img {
   width: 100%;
   height: 100%;
   background-size: cover;
 }
-
 .item__content .photo__date {
   position: absolute;
   bottom: -6px;
   right: 5px;
-  font-family: "Museo Slab";
+  font-family: "Museo Slab", Arial, sans-serif;
   font-size: 28px;
   color: #fff;
   z-index: 2;
 }
-
 .item .icons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   height: 58px;
 }
-
 .item .icons div {
   margin-right: 10px;
 }
-
 .item .icons__comment {
-  font-family: "Segoe WP Light";
+  font-family: "Segoe WP Light", Arial, sans-serif;
   font-size: 20px;
   color: #7e7e7e;
   padding-left: 5px;
 }
-
 .item .comment {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
 .item .comment__textarea {
   resize: none;
   color: #6f6f6f;
@@ -463,10 +335,9 @@ table {
   border-radius: 2px;
   border: 1px solid #d6d6d6;
   background: #f2f2f2;
-  width: calc(100% - 70px);
+  width: calc( 100% - 70px );
   margin-bottom: 17px;
 }
-
 .item .comment__button {
   width: 50px;
   height: 50px;
@@ -479,7 +350,7 @@ table {
 }
 
 .footer__content {
-  font-family: "Segoe";
+  font-family: "Segoe", Arial, sans-serif;
   text-align: center;
   font-size: 16px;
   padding: 100px 0 50px 0;
@@ -490,11 +361,9 @@ table {
   .header {
     max-width: 95vw;
   }
-
   .header__heading {
     font-size: 35px;
   }
-
   .header__description {
     width: 90vw;
   }
@@ -504,13 +373,11 @@ table {
     margin-left: 5px;
     margin-right: 5px;
   }
-
   .item-small__heading {
     line-height: 20px;
     margin-left: 12px;
     font-size: 14px;
   }
-
   .item-small__button {
     width: 25px;
     height: 25px;
@@ -521,57 +388,46 @@ table {
     margin-left: 5px;
     margin-right: 5px;
   }
-
   .item__heading {
     line-height: 35px;
     font-size: 14px;
   }
-
   .item__content {
     width: 100%;
   }
-
   .item__content .photo {
     width: 40vw;
     height: 26vw;
   }
-
   .item__content .photo__img {
     width: 100%;
     height: 100%;
   }
-
   .item__content .photo__date {
     font-size: 20px;
   }
-
   .item__content .icons {
     height: 40px;
     padding: 10px 0;
   }
-
   .item__content .icons div {
     margin-right: 10px;
   }
-
   .item__content .icons__comment {
     font-size: 14px;
     width: 100%;
     padding-left: 0;
   }
-
   .item__content .comment {
     flex-direction: column;
     padding-bottom: 10px;
   }
-
   .item__content .comment__textarea {
     font-size: 12px;
     height: 40px;
     width: 100%;
     margin-bottom: 10px;
   }
-
   .item__content .comment__button {
     width: 33px;
     height: 33px;
@@ -583,44 +439,34 @@ table {
     left: calc(50% - 2px);
     width: 4px;
   }
-
   .timeline__container .left {
     margin-right: 15px;
   }
-
-  .timeline__container .left .item:before,
-  .timeline__container .left .item-small:before {
+  .timeline__container .left .item:before, .timeline__container .left .item-small:before {
     height: 6px;
     width: 6px;
     top: 11px;
     right: -25px;
     border: 2px solid #56555c;
   }
-
-  .timeline__container .left .item:after,
-  .timeline__container .left .item-small:after {
+  .timeline__container .left .item:after, .timeline__container .left .item-small:after {
     top: 9px;
     right: -8px;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
     border-left: 9px solid #fff;
   }
-
   .timeline__container .right {
     margin-left: 15px;
   }
-
-  .timeline__container .right .item:before,
-  .timeline__container .right .item-small:before {
+  .timeline__container .right .item:before, .timeline__container .right .item-small:before {
     height: 6px;
     width: 6px;
     top: 11px;
     left: -25px;
     border: 2px solid #56555c;
   }
-
-  .timeline__container .right .item:after,
-  .timeline__container .right .item-small:after {
+  .timeline__container .right .item:after, .timeline__container .right .item-small:after {
     top: 11px;
     left: -8px;
     border-top: 7px solid transparent;
@@ -628,7 +474,6 @@ table {
     border-right: 9px solid #fff;
   }
 }
-
 @media (max-width: 570px) {
   .item-small__heading {
     text-align: center;
@@ -637,20 +482,19 @@ table {
   .item {
     padding-top: 5px;
   }
-
   .item__heading {
     line-height: 20px;
     padding-bottom: 10px;
     text-align: center;
   }
-
   .item__content .photo {
     width: 31vw;
     height: 20vw;
     margin: 0 auto;
   }
-
   .item__content .photo__date {
     font-size: 17px;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
