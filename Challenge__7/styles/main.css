@@ -1,7 +1,3 @@
-@import url("https://db.onlinewebfonts.com/c/b7a29c039fb2e83c4ed29dc264ecd906?family=MrsEaves");
-@import url("https:////db.onlinewebfonts.com/c/3fdb879e1f60a0c91e9b4bee114a0928?family=Segoe+WP+Light");
-@import url("https:////db.onlinewebfonts.com/c/4735dd9ca25670c44600021e7428b8d3?family=Segoe");
-@import url("https:////db.onlinewebfonts.com/c/6c05048f4d8be0d5770f1d2ac6535624?family=Museo+Slab");
 body {
   background: #56555c;
   overflow-x: hidden;
@@ -11,18 +7,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
-}
-
-body {
-  line-height: 1;
 }
 
 ol, ul {
@@ -300,7 +289,7 @@ table {
 }
 .item__content .photo__date {
   position: absolute;
-  bottom: -6px;
+  bottom: -10px;
   right: 5px;
   font-family: "Museo Slab", Arial, sans-serif;
   font-size: 28px;
@@ -405,6 +394,7 @@ table {
   }
   .item__content .photo__date {
     font-size: 20px;
+    bottom: -7px;
   }
   .item__content .icons {
     height: 40px;
