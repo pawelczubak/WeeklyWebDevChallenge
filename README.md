@@ -13,3 +13,6 @@
 ### [Challenge__7](https://pawelczubak.github.io/WeeklyWebDevChallenge/Challenge__7)
 - HTML, SASS, JS, BEM 
 - [.jpg](https://pawelczubak.github.io/WeeklyWebDevChallenge/Projects/7.jpg)
+### [Challenge__8 - in progress](https://pawelczubak.github.io/WeeklyWebDevChallenge/Challenge__8)
+- HTML, SASS, JS, BEM 
+- [.jpg](https://pawelczubak.github.io/WeeklyWebDevChallenge/Projects/8.jpg)
