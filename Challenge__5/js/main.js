@@ -91,7 +91,7 @@ navSlide();
 
 // scroll back to top
 
-lettimeOut;
+
 
 function scrollToTop() {
     if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
