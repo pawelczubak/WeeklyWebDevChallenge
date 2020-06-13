@@ -81,12 +81,11 @@ const navSlide = () => {
         // burgrt animate
         burger.classList.toggle('toggle');
     });
-
-
-
 }
 
 navSlide();
+
+
 
 
 // scroll back to top
@@ -99,3 +98,10 @@ function scrollToTop() {
         timeOut = setTimeout('scrollToTop()', 5);
     } else clearTimeout(timeOut);
 }
+
+
+// Smooth Scroll
+
+const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800
+});

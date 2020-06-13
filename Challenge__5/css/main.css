@@ -16,6 +16,7 @@ body {
     color: #ffffff;
     width: 100%;
     overflow-x: hidden;
+
 }
 
 .decor__white {
@@ -575,7 +576,6 @@ body {
 .testimonial__box {
     width: 100%;
     text-align: center;
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
